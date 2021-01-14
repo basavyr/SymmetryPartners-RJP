@@ -1,0 +1,4 @@
+#!/bin/zsh
+echo 'Building latex project...'
+pdflatex draft.tex
+echo 'Finishing building project...'
