@@ -1,7 +1,10 @@
-\documentclass[myclassdoc,debug]{rjparticle}
+%\documentclass[myclassdoc,debug]{rjparticle}
+
 %use the following command when typesetting your paper:
-% \documentclass{rjparticle}
+
+\documentclass{rjparticle}
 \usepackage{graphicx}
+\usepackage{lipsum}
 
 \title{Extensive Study of the Wobbling Properties in $^{163}$Lu Based on a Parity Symmetry Property} 
 
@@ -31,7 +34,7 @@ Reactorului 30, RO-077125, P.O.B. MG-6, M\u{a}gurele-Bucharest, Romania}
 %\RJPVolume{63}{2018}
 %\RJPNumber{1-2}
 %\RJPPages{}{}
-\columntitle{A shorter version of the title to fit one line header of odd pages}
+\columntitle{Extensive Study of $^{163}$Lu}
 %\date{\today}
 %\dedication{}
 %\domaintitle{}
@@ -40,29 +43,9 @@ Reactorului 30, RO-077125, P.O.B. MG-6, M\u{a}gurele-Bucharest, Romania}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Please, remove these lines when typesetting your document!
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lstset{%
-basicstyle=\small,
-language=[AlLaTeX]TeX,
-columns=fullflexible,
-%keepspaces=true,
-showspaces=true,
-showstringspaces=false,
-keywordstyle=[2]\ttfamily,
-identifierstyle=,
-texcsstyle=*\ttfamily,
-commentstyle=\color{gray},
-string=[s]<>,
-morestring=[b]',
-stringstyle=\emph,
-breaklines=true,
-deletekeywords={list},
-moretexcs={authnote,keywords,pacs},
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \maketitle
+
 \begin{abstract}
 A new interpretation on the wobbling structure in $^{163}$Lu is developed, based on the concept of parity symmetry. It is known that four wobbling bands are experimentally observed in this isotope, where three of them are considered as wobbling phonon excitations (namely $TSD_2$, $TSD_3$, and $TSD_4$) and the yrast band for the ground state (that is TSD1). In the present work, the trial function that is used for obtaining the wobbling spectrum is analyzed in terms of its behavior under the rotation operation. Indeed, due to a specific symmetry to rotations with $\pi$ around the 2-axis of the triaxial system, the parity becomes a good quantum number. As such, the trial function admits solutions with negative parity, which belong to the rotational states in $TSD_4$. A unified description of all the triaxial super-deformed bands in $^{163}$Lu is achieved with the new formalism.
 \end{abstract}
@@ -78,18 +61,18 @@ In this paper, the wobbling spectrum is represented. See Figure \ref{tsd_spectru
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.5]{simple-code/figs/ExcitationEnergies_GridView.pdf}
+    \includegraphics[scale=0.35]{ExcitationEnergies_GridView.pdf}
     \caption{The excitation energies for the wobbling spectrum of $^{163}$Lu. Comparison with the available experimental data.}
     \label{tsd_spectrum}
 \end{figure}
 
-The contour plots for a state within each of the four bands are properly shown in Figure \ref{contours}.
+The trajectories of a rotational state from $TSD_1$  is graphically represented in Figure \ref{trajectory}.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.5]{simple-code/figs/tsd1_spin1.eps}
+    \includegraphics[scale=0.4]{tsd1_spin1.eps}
     \caption{The contour plots with the energy function $\mathcal{H}$ of the nucleus, evaluated for the obtained fit parameters.}
-    \label{contours}
+    \label{trajectory}
 \end{figure}
 
 \begin{acknowledgement}
