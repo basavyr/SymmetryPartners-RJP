@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.25)  14 JAN 2021 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.25)  20 JAN 2021 20:28
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **draft.tex
 (./draft.tex
@@ -11,47 +12,6 @@ Document Class: rjparticle 2010/11/28  v. 2.0 RJP document LaTeX class
 File: rjp_size11.clo 2010/11/28 v1.0 RJP style LaTeX file (page layout)
  (./rjp_fonts.def
 File: rjp_fonts.def 2010/08/20 v1.1a font configurations for RJP
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 63.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 64.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 65.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 73.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 110.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 111.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 112.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 120.
-
 )
 \s@feTextHeightRJP=\skip47
 \s@feTextWidthRJP=\skip48
@@ -76,7 +36,8 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 \c@figure=\count187
 \c@table=\count188
 \c@rjpEqnArrayCount=\count189
- (/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip54
 \bibsep=\skip55
@@ -914,7 +875,7 @@ Package `hyperref' Info: End of reference (link) `table.1', line 180.
 ] (./draft.aux) ) 
 Here is how much of TeX's memory you used:
  11109 strings out of 479382
- 157804 string characters out of 5869369
+ 157803 string characters out of 5869369
  685561 words of memory out of 5000000
  27908 multiletter control sequences out of 15000+600000
  440312 words of font info for 104 fonts, out of 8000000 for 9000
@@ -939,7 +900,7 @@ st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on draft.pdf (13 pages, 478976 bytes).
+Output written on draft.pdf (13 pages, 478891 bytes).
 PDF statistics:
  279 PDF objects out of 1000 (max. 8388607)
  242 compressed objects within 3 object streams
