@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex simple-tex"] 1611251539 "simple-tex.aux" "simple-tex.bbl" "simple-tex" 1611251619
+["bibtex dev-draft"] 1611251940 "dev-draft.aux" "dev-draft.bbl" "dev-draft" 1611251997
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
+  "dev-draft.aux" 1611251996 609 eb229205cfa512acc6c7bd9ab85540fd "pdflatex"
   "references.bib" 1611251489 982 0075b1b3169d678e446cc2b57a8cc249 ""
-  "simple-tex.aux" 1611251540 609 eb229205cfa512acc6c7bd9ab85540fd "pdflatex"
   (generated)
-  "simple-tex.blg"
-  "simple-tex.bbl"
-["pdflatex"] 1611251539 "simple-tex.tex" "simple-tex.pdf" "simple-tex" 1611251619
+  "dev-draft.bbl"
+  "dev-draft.blg"
+["pdflatex"] 1611251996 "dev-draft.tex" "dev-draft.pdf" "dev-draft" 1611251997
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -30,7 +30,6 @@
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1136768653 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
-  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1136768653 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -40,7 +39,6 @@
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
-  "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1248133631 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty" 1583617216 6501 4011d89d9621e0b0901138815ba5ff29 ""
   "/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
@@ -75,10 +73,10 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1608962012 5049295 172cc82189fa6e68304fe51818d032a5 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1608891305 2553354 1baf58d299e3333fc05ede7dac9340c5 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "simple-tex.aux" 1611251540 609 eb229205cfa512acc6c7bd9ab85540fd "pdflatex"
-  "simple-tex.bbl" 1611251539 830 2bdc21814904c06cba9934afded3544d "bibtex simple-tex"
-  "simple-tex.tex" 1611251538 2747 d2b8c019b5293ca9d866745bebc425bc ""
+  "dev-draft.aux" 1611251996 609 eb229205cfa512acc6c7bd9ab85540fd "pdflatex"
+  "dev-draft.bbl" 1611251940 830 2bdc21814904c06cba9934afded3544d "bibtex dev-draft"
+  "dev-draft.tex" 1611251996 2795 5d821ed3ab3e2ae0bb3a58924b8575a4 ""
   (generated)
-  "simple-tex.pdf"
-  "simple-tex.aux"
-  "simple-tex.log"
+  "dev-draft.log"
+  "dev-draft.pdf"
+  "dev-draft.aux"
