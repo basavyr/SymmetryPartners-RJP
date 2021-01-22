@@ -1,21 +1,34 @@
-\documentclass[12pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
-\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
-\geometry{a4paper}                   		% ... or a4paper or a5paper or ... 
-\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
-								% TeX will automatically convert eps --> pdf in pdflatex		
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+\geometry{a4paper}
+
+\usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{physics}
 \usepackage{amsmath}
 \usepackage{lipsum}
 
+\usepackage{cite} %Uses proper indexing when citing multiple papers
+\usepackage{authblk} %Shows all authors with e-mail addresses and affiliations properly on the page
+
 \title{Extensive Study of the Wobbling Properties in $^{163}$Lu Based on the Parity Concept} 
-\author{Robert Poenaru, Apolodor Aristotel Raduta}
-\date{\today}							% Activate to display a given date or no date
+% \author{Robert Poenaru, Apolodor Aristotel Raduta}
+
+\author[1,2]{Robert Poenaru \thanks{robert.poenaru@drd.unibuc.ro}}
+\author[2,3]{Apolodor Aristotel Raduta \thanks{raduta@nipne.ro}}
+\affil[1]{Doctoral School of Physics, University of Bucharest, Romania}
+\affil[2]{``Horia Hulubei'' National R\&D Institute for Physics and Nuclear Engineering, Reactorului 30, RO-077125, P.O.B. MG-6, M\u{a}gurele-Bucharest, Romania}
+\affil[3]{Academy of Romanian Scientists, Bucharest, Romania}
+
+\date{\today}
 
 
 
 \begin{document}
+
 \bibliographystyle{unsrt}
+
 \maketitle
 
 \begin{abstract}
@@ -37,7 +50,7 @@ A new interpretation on the wobbling motion, but based on the quasiparticle plus
 \end{align}
 
 The equation \ref{wavefunction} is good. This equation is studied in detail by the same team in \cite{raduta2018wobbling} and also \cite{raduta2020new}.
-Nuclear wobbling motion was first predicted theoretically for even-even nuclei \cite{bohr1998nuclear}.
+Nuclear wobbling motion was first predicted theoretically for even-even nuclei \cite{bohr1998nuclear}. The references \cite{bohr1998nuclear,raduta2018wobbling,chen2020interpretation,raduta2020new} contain valid information.
 
 \bibliography{references}
 
