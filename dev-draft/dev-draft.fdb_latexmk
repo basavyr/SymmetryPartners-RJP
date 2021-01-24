@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex dev-draft"] 1611490352 "dev-draft.aux" "dev-draft.bbl" "dev-draft" 1611490353
+["bibtex dev-draft"] 1611517681 "dev-draft.aux" "dev-draft.bbl" "dev-draft" 1611517682
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "dev-draft.aux" 1611490353 1416 44aff49a3123957dbf28b93e357fd613 "pdflatex"
-  "references.bib" 1611490331 3785 539fa23daecf3b012da9d7924d6737aa ""
+  "dev-draft.aux" 1611517682 2618 779724fba54e877c96c329d52c72510b "pdflatex"
+  "references.bib" 1611517462 9893 3ca33cf486f72b2a6193c17513f04931 ""
   (generated)
   "dev-draft.blg"
   "dev-draft.bbl"
-["pdflatex"] 1611490352 "dev-draft.tex" "dev-draft.pdf" "dev-draft" 1611490353
+["pdflatex"] 1611517681 "dev-draft.tex" "dev-draft.pdf" "dev-draft" 1611517682
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -95,12 +95,12 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1608962012 5049295 172cc82189fa6e68304fe51818d032a5 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1608891305 2553354 1baf58d299e3333fc05ede7dac9340c5 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "dev-draft.aux" 1611490353 1416 44aff49a3123957dbf28b93e357fd613 "pdflatex"
-  "dev-draft.bbl" 1611490352 2025 87b34af98783361df123f6247e4cc617 "bibtex dev-draft"
-  "dev-draft.tex" 1611490331 9036 f29c2755ba4166a7b9615cc8677553bb ""
-  "figs/simple_wobbling_spectrum.pdf" 1611490331 15812 cd911c39a75ea42c6f1d75114a195044 ""
+  "dev-draft.aux" 1611517682 2618 779724fba54e877c96c329d52c72510b "pdflatex"
+  "dev-draft.bbl" 1611517681 6552 387a2d13a73cdffcd5711203b610d97a "bibtex dev-draft"
+  "dev-draft.tex" 1611517462 14511 c4d0626b9660f2ab9e046c161a96afe5 ""
+  "figs/simple_wobbling_spectrum.pdf" 1611517462 15843 34e35d071b1ec7fbd7855e3887b62970 ""
   "figs/wobbling_tilting_axis.pdf" 1611490331 27134 5e1985a762dc8c37bba735a78f320656 ""
   (generated)
-  "dev-draft.log"
   "dev-draft.aux"
+  "dev-draft.log"
   "dev-draft.pdf"
