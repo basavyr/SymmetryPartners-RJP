@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{moller2006global}
 Peter M{\"o}ller, Ragnar Bengtsson, B~Gillis Carlsson, Peter Olivius, and
@@ -47,5 +47,10 @@ BW~Xiong and YY~Wang.
 Aage Bohr and Ben~R Mottelson.
 \newblock {\em Nuclear structure}, volume~1.
 \newblock World Scientific, 1998.
+
+\bibitem{hagemann2003quantized}
+Gudrun~B Hagemann and Ikuko Hamamoto.
+\newblock Quantized wobbling in nuclei.
+\newblock {\em Nuclear Physics News}, 13(3):20--24, 2003.
 
 \end{thebibliography}
