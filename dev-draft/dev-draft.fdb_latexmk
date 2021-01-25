@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex dev-draft"] 1611573257 "dev-draft.aux" "dev-draft.bbl" "dev-draft" 1611573469
+["bibtex dev-draft"] 1611602443 "dev-draft.aux" "dev-draft.bbl" "dev-draft" 1611602444
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "dev-draft.aux" 1611573469 3564 2e25dcf8ae8105cae042570529442d38 "pdflatex"
-  "references.bib" 1611517462 9893 3ca33cf486f72b2a6193c17513f04931 ""
+  "dev-draft.aux" 1611602444 5937 bc4f29d5ae145d44935e22a2b248f1c5 "pdflatex"
+  "references.bib" 1611602403 17962 e97abd67b012ef709cf48de2d0f44642 ""
   (generated)
   "dev-draft.blg"
   "dev-draft.bbl"
-["pdflatex"] 1611573468 "dev-draft.tex" "dev-draft.pdf" "dev-draft" 1611573469
+["pdflatex"] 1611602443 "dev-draft.tex" "dev-draft.pdf" "dev-draft" 1611602444
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -95,14 +95,14 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1608962012 5049295 172cc82189fa6e68304fe51818d032a5 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1608891305 2553354 1baf58d299e3333fc05ede7dac9340c5 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "dev-draft.aux" 1611573469 3564 2e25dcf8ae8105cae042570529442d38 "pdflatex"
-  "dev-draft.bbl" 1611573257 6552 387a2d13a73cdffcd5711203b610d97a "bibtex dev-draft"
-  "dev-draft.tex" 1611573239 19158 938ece46127a45c699d1ed4f1e085547 ""
+  "dev-draft.aux" 1611602444 5937 bc4f29d5ae145d44935e22a2b248f1c5 "pdflatex"
+  "dev-draft.bbl" 1611602443 13211 4d52d2c051e76f95000845d7e028446c "bibtex dev-draft"
+  "dev-draft.tex" 1611602403 24880 6aad731610a27a7f7cf4caba41596191 ""
   "figs/simple_wobbling_spectrum.pdf" 1611517462 15843 34e35d071b1ec7fbd7855e3887b62970 ""
   "figs/wobbling_Regimes.pdf" 1611567463 63454 bb9d8366a3f8d364fc6d513e4425723d ""
   "figs/wobbling_Regimes_COUPLING_SCHEME.pdf" 1611573416 81686 20570e0a0b774dae780dd85802aa25dc ""
   "figs/wobbling_tilting_axis.pdf" 1611490331 27134 5e1985a762dc8c37bba735a78f320656 ""
   (generated)
-  "dev-draft.log"
-  "dev-draft.aux"
   "dev-draft.pdf"
+  "dev-draft.aux"
+  "dev-draft.log"
