@@ -8,6 +8,7 @@
 \usepackage{physics}
 \usepackage{amsmath}
 \usepackage{lipsum}
+\usepackage[shortlabels]{enumitem}
 
 \usepackage{cite} %Uses proper indexing when citing multiple papers
 \usepackage{authblk} %Shows all authors with e-mail addresses and affiliations properly on the page
@@ -145,16 +146,68 @@ Considering the experimental evidence which was indicated above and calculations
 
 In accordance with the band structure which was just formulated, a full description of the wobbling spectrum of $^{163}$Lu was done within a semi-classical formalism by Raduta et. al. \cite{raduta2017semiclassical}. Therein, with the TDVE applied on the PRM Hamiltonian with a trial wave-function that encapsulates both the states of the deformed nucleus $I$ and the single-particle states $j$, a set of analytical expressions for the excitation energies of all four bands was obtained. The energies belonging to the excited wobbling phonons were populated by the action of a phonon operator $\Gamma^\dagger$ on the ground state. Indeed, by acting with the operator one on the ground state with the spin $I=R+j$ and $R=0,2,4,\dots$, the states from $TSD_2$ ($n_w=1$) can be obtained. By applying twice ($n_w=2$) the phonon operator, the rotational states from $TSD_3$ will be created. Lastly, the states from $TSD_4$ are obtained with the action on the ground state with three ($n_w=3$) phonon operators: two of positive parity and one of negative parity (due to the overall negative parity $\pi_4=-1$ of $TSD_4$). One has to remark the fact that for $TSD_4$, the model assumes an odd-particle-rotor with a different intruder: the $\pi(h_{9/2})$ nucleon. This was suggested by the negative parity orbital which might be occupied by this proton, in the spherical shell model. Several calculations in the literature point out that this nucleon might be causing the third excited wobbling band to have negative parity \cite{jensen2004coexisting}. It is worthwhile mentioning that for the work described in \cite{raduta2017semiclassical}, the variational principle was only applied for the states in $TSD_1$, since the other three wobbling bands are obtained through phononic excitations with the corresponding operator.
 
-In what follows, it is useful to introduce some notations that will refer to the formalisms developed by the team in describing the wobbling motion in $^{163}$Lu. As such, the work developed in \cite{raduta2020approach,raduta2020towards} will be denoted to \texttt{W1}, while the current work (which is in fact an extension of \texttt{W1}) will be shortly denoted by \texttt{W2}. For the sake of a self-consistent presentation, in the following subsection \ref{subsection:w1} a brief overview of the recently published work \texttt{W1} will be made, with further development that has \texttt{W1} as a starting ground being presented in the second subsection \ref{subsection:w2} - representing the core concept of the current team's investigation.
+In what follows, it is useful to introduce some notations that will refer to the formalisms developed by the team in describing the wobbling motion in $^{163}$Lu. As such, the work developed in \cite{raduta2020approach,raduta2020towards} will be denoted to \texttt{W1}, while the current work (which is in fact an extension of \texttt{W1}) will be shortly denoted by \texttt{W2}. For the sake of a self-consistent presentation, in the following subsection \ref{subsection:w1} a brief overview of the recently published work \texttt{W1} will be made, with further development that has \texttt{W1} as a starting ground being presented in the second subsection \ref{subsection:w2} - representing the \emph{core concept} of the current team's investigation.
 
 \subsection{\texttt{W1} - Signature Partner Bands}
 \label{subsection:w1}
-section text.
- 
+
+Working with a semi-classical approach that is based on the triaxial particle rotor model, a full description of the wobbling bands for $^{163}$Lu was achieved, but with a slightly modified band structure. Indeed, rather than applying a TDVE just for the yrast $TSD_1$ band, the states from $TSD_2$ were also obtained variationally. This was possible due to the different coupling schemes that emerged for $TSD_1$ and $TSD_2$, respectively. More precisely, in \cite{raduta2020towards} and \cite{raduta2020approach} there are three different coupling schemes $(\vec{R}+\vec{j})$: states from $TSD_1$ arise from the odd $\pi(i_{13/2})$ intruder coupling with a core with angular momentum sequence $R_1=0,2,4,\dots$; states from $TSD_2$ arise from the same odd proton but coupling with a different triaxial core with angular momentum sequence $R_2=1,3,5,\dots$. The band $TSD_3$ is obtained as a set of states which are built on top of $TSD_2$, with the action of a wobbling frequency with wobbling phonon number $n_w=1$; this being different than the band structure previously mentioned where the third band was a two-phonon excitation of the yrast $TSD_1$. Lastly, the fourth band $TSD_4$ is a ground state band which results from the coupling of the same core as for $TSD_2$ (that is defined with the angular momentum sequence $R_2=1,3,5,\dots$) but with a different odd nucleon: $\pi(h_{9/2})$. Consequently, $TSD_2$ and $TSD_4$ are yrast states, alongside $TSD_1$. Each band represents a collection of energy levels describing ground states that correspond to distinct sets of angular momenta.
+
+For the first three bands, the MOIs are the same, and they are considered to be free parameters within the numerical calculations. However, this is not true for the fourth band, where a different set of MOIs had to be introduced, since for $TSD_4$ the core polarization effects are changed by coupling scheme.
+
+A final aspect that needs to be mentioned regarding \texttt{W1} has to do with the interpretation of $TSD_1$ and $TSD_2$ as being Signature Partner Bands (SPB). Signature is a quantum property strictly related to the invariance of the nuclear wave-function to a rotation by an angle $\pi$ around an axis that is perpendicular to the symmetry axis. Because the triaxial rotor Hamiltonian has a $D_2$ symmetry property, signature quantum number is a good quantum number for the case of non-axially symmetric nuclei. In \cite{raduta2020approach} the signature concept is brought to the classical picture associated to a triaxial nucleus by means of rotation operators which act on the trial function (this function is a product of two coherent states, one that is associated to the core and one to the valence nucleon). Eqs. 27-29 from \cite{raduta2020approach} will extract two signatures for $TSD_1$ and $TSD_2$, namely the \emph{favored} signature $\alpha_{1f}=+1/2$ for the first band, and \emph{un-favored} signature $\alpha_{2u}=-1/2$ for the second band, respectively. A justification for the possibility of $TSD_1$ and $TSD_2$ of being SPB was based on the calculation of the triaxial potential (which was systematically performed in \cite{raduta2017semiclassical} and \cite{raduta2018wobbling}), concluding that the minimum is very deep, preventing in this way the states from $TSD_2$ to share other minima through tunneling effects.
+
+A few key-points which arise based on the above discussion regarding \texttt{W1} can be summarized as follows:
+
+\begin{enumerate}[(a)]
+    \item The wobbling band structure in $^{163}$Lu was re-interpreted: three bands are now yrast ground states, and only $TSD_3$ is one-phonon excited wobbling band (built on top of $TSD_2$)
+    \item Both $TSD_1$ and $TSD_2$ are obtained variationally, by solving the time dependent variational equation associated to the initial quantal Hamiltonian
+    \item There are three different $R+j$ coupling schemes that will produce the entire spectra:
+    \begin{enumerate}[(i)]
+        \item Coupling $C_1$: The odd proton $j_1={13/2}$ is coupled to a core sequence with a.m. $R_1=0,2,4,\dots$ (even spin states for the triaxial rotor).
+        \item Coupling $C_2$: The same odd proton $j_1={13/2}$ as in $C_1$ is coupled to a core sequence with a.m. $R_2=1,3,5,\dots$ (odd spin states for the triaxial rotor).
+        \item Coupling $C_3$: A different odd proton $j_2={9/2}$ is coupled to the same core as in $C_2$.
+    \end{enumerate}
+    \item Two different sets of MOIs corresponding to the triaxial nucleus (that is the rotor coupled with the odd proton) are obtained as fitting parameters throughout the numerical calculations: one for the set $TSD_{1,2,3}$ and one for for $TSD_4$.
+    \item $TSD_1$ and $TSD_2$ are Signature Partner Bands: with $TSD_1$ ($TSD_2$) being the favored (un-favored) partner. Their corresponding signature quantum numbers are $\alpha_{1f}=+1/2$ and $\alpha_{2u}=-1/2$.
+    \item As a side-by-side comparison with regards to the overall agreement with the experimental data, \texttt{W1} yielded better results than compared to the previous work depicted in Ref. \cite{raduta2007semiclassical}, although it must be mentioned that both models are based on semi-classical approaches.
+\end{enumerate}
+
+A diagram which shows the workflow involved in \texttt{W1} can be seen in the Figure \ref{w1-model-worfklow}. Also, a comparison with previous calculations can be seen in Figure 21 from Ref. \cite{raduta2020approach}.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.65]{figs/W1_W2_models.pdf}
+    \caption{The general workflow involving \texttt{W1} model.}
+    \label{w1-model-worfklow}
+\end{figure}
+
 \subsection{\texttt{W2} - Signature Partner Bands + Parity Partner Bands}
 \label{subsection:w2}
 
-section text.
+The main question which can be asked regarding the formalism \texttt{W1} that was described in \ref{subsection:w1} is whether it is possible to obtain a \emph{unified} description for all four bands in $^{163}$Lu in relation to the coupling scheme. In other words, it is worth investigating the possibility of having an unique single-particle state $j$ that is coupled to a core of natural positive parity (hereafter denoted by $R_1$) for the bands $TSD_{1,2,3}$ and a core of negative parity for $TSD_4$ (hereafter denoted by $R_2$).
+
+Fortunately, the answer is positive: starting from the semi-classical formalism of \texttt{W1}, one can properly adjust the coupling scheme, making sure that the entire numerical recipe used for obtaining the energy spectrum of $^{163}$Lu remains consistent with the experimental results.
+
+Regarding the unique single-particle that couples to the triaxial core, it is natural to pick the $i_{13/2}$ proton (that is $j_1$ from \texttt{W1}). Reasoning behind this choice has to do with the microscopic calculations \cite{jensen2002wobbling,hagemann2003quantized,jensen2004coexisting} that showed stable triaxial structures in the $^{163}$Lu potential energy surface when the triaxial core couples with a highly aligned $j$-shell particle, strongly indicating the $\pi(i_{13/2})$ proton.
+
+By taking $j_1$ as the sole intruder that couples to a positive core ($R_1$) and also a negative core ($R_2$), the even/odd spin sequences for the coupling schemes does not change. In fact, the coupling schemes can be readily obtain, making sure that the final (experimental) spin sequences for each TSD band is intact. 
+
+\begin{enumerate}[(a)]
+    \item Coupling $C'_1$: the odd $j_1$ proton aligns with the core of even-integer spin sequence $R_1=0,2,4,\dots$, with a parity of the $R_1$ core that is positive $\pi_1=+1$.
+    \item Coupling $C'_2$: the odd $j_1$ proton aligns with the core with an odd-integer spin sequence $R_1=1,3,5,\dots$, which has negative parity $\pi_2=-1$.
+\end{enumerate}
+
+Based on Obviously, the odd valence nucleon $j_1$ has a positive parity $\pi_{j_1}=+1$. 
+
+Concluding the current subsection, a diagram which shows the workflow involved in \texttt{W2} can be seen in the Figure \ref{w2-model-worfklow}.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.65]{figs/W1_W2_models.pdf}
+    \caption{The general workflow involving \texttt{W2} model.}
+    \label{w2-model-worfklow}
+\end{figure}
 
 \section{Theoretical Background}
 
