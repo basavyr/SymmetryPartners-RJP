@@ -155,6 +155,9 @@ Working with a semi-classical approach that is based on the triaxial particle ro
 
 For the first three bands, the MOIs are the same, and they are considered to be free parameters within the numerical calculations. However, this is not true for the fourth band, where a different set of MOIs had to be introduced, since for $TSD_4$ the core polarization effects are changed by coupling scheme.
 
+Using \texttt{W1}, the final results pointed out to a largest MOI corresponding to the 1-axis (with $\mathcal{I}_1$ being the largest MOI obtained through the fitting procedure), making the system rotate around the 1-axis (that is the short axis). Moreover, the odd proton is aligned to the short axis as well, suggesting that the nucleus has a LW character. By representing the experimental wobbling energies according to Eq. \ref{wobbling-energy-relative}, it was obtained that both theoretical as well as the experimental values were increasing functions with respect to an increase in angular momentum (keep in mind that the first wobbling band $n_w=1$ within the \texttt{W1} model is $TSD_3$). The agreement between the two sets of data (see Figure 6 from \cite{raduta2020approach}) indicate that the condition for LW/TW character of the wobbling bands stated by Frauendorf et. al. in \cite{frauendorf2014transverse} is not strictly related to the increasing/decreasing wobbling energy $E_\text{wob}$. In fact, Guo et. al. \cite{guo2020risk} also point out that the approximation of Frozen Alignment (FA) from \cite{frauendorf2014transverse} neglects the Coriolis interaction of the single particle. There is an ongoing debate whether the behavior of an LW or TW triaxial nucleus is strictly related to the change in $E_{wob}$ with total a.m. \cite{tanabe2017stability,frauendorf2018comment,tanabe2018reply}.
+
+
 A final aspect that needs to be mentioned regarding \texttt{W1} has to do with the interpretation of $TSD_1$ and $TSD_2$ as being Signature Partner Bands (SPB). Signature is a quantum property strictly related to the invariance of the nuclear wave-function to a rotation by an angle $\pi$ around an axis that is perpendicular to the symmetry axis. Because the triaxial rotor Hamiltonian has a $D_2$ symmetry property, signature quantum number is a good quantum number for the case of non-axially symmetric nuclei. In \cite{raduta2020approach} the signature concept is brought to the classical picture associated to a triaxial nucleus by means of rotation operators which act on the trial function (this function is a product of two coherent states, one that is associated to the core and one to the valence nucleon). Eqs. 27-29 from \cite{raduta2020approach} will extract two signatures for $TSD_1$ and $TSD_2$, namely the \emph{favored} signature $\alpha_{1f}=+1/2$ for the first band, and \emph{un-favored} signature $\alpha_{2u}=-1/2$ for the second band, respectively. A justification for the possibility of $TSD_1$ and $TSD_2$ of being SPB was based on the calculation of the triaxial potential (which was systematically performed in \cite{raduta2017semiclassical} and \cite{raduta2018wobbling}), concluding that the minimum is very deep, preventing in this way the states from $TSD_2$ to share other minima through tunneling effects.
 
 A few key-points which arise based on the above discussion regarding \texttt{W1} can be summarized as follows:
@@ -195,10 +198,11 @@ By taking $j_1$ as the sole intruder that couples to a positive core ($R_1$) and
 
 \begin{enumerate}[(a)]
     \item Coupling $C'_1$: the odd $j_1$ proton aligns with the core of even-integer spin sequence $R_1=0,2,4,\dots$, with a parity of the $R_1$ core that is positive $\pi_1=+1$.
-    \item Coupling $C'_2$: the odd $j_1$ proton aligns with the core with an odd-integer spin sequence $R_1=1,3,5,\dots$, which has negative parity $\pi_2=-1$.
+    \item Coupling $C'_2$: the odd $j_1$ proton aligns with the core of even-integer spin sequence $R_2=1,3,5,\dots$, with a parity of the $R_1$ core that is positive $\pi_1=+1$.
+    \item Coupling $C'_3$: the odd $j_1$ proton aligns with the core with an odd-integer spin sequence $R_1=1,3,5,\dots$, which has negative parity $\pi_2=-1$.
 \end{enumerate}
 
-Based on Obviously, the odd valence nucleon $j_1$ has a positive parity $\pi_{j_1}=+1$. 
+From the three schemes sketched above, it is clear that $C'_1$ corresponds to the yrast $TSD_1$, $C'_2$ to the ground state $TSD_2$, and finally $C'_3$ to the ground state $TSD_4$. Obviously, the odd valence nucleon $j_1$ has a positive parity $\pi_{j_1}=+1$. 
 
 Concluding the current subsection, a diagram which shows the workflow involved in \texttt{W2} can be seen in the Figure \ref{w2-model-worfklow}.
 
