@@ -9,6 +9,8 @@
 \usepackage{amsmath}
 \usepackage{lipsum}
 \usepackage[shortlabels]{enumitem}
+% \usepackage{hyperref}
+
 
 \usepackage{cite} %Uses proper indexing when citing multiple papers
 \usepackage{authblk} %Shows all authors with e-mail addresses and affiliations properly on the page
@@ -288,8 +290,74 @@ Working within a semi-classical approach allows one to keep a close contact with
     \ket{\Psi_{IjM}}=\mathbf{N}e^{z\hat{I}_-}e^{s\hat{j}_-}\ket{IMI}\ket{jj}\ ,
     \label{trial-function}
 \end{align}
-where the operators $\hat{I}_-$ and $\hat{j}_-$ denote the lowering operators for the intrinsic angular momenta $\vec{I}$ and $\vec{j}$, respectively, and $\mathbf{N}$ plays the role of the normalization constant. One must remark the fact that the states from Eq. \ref{trial-function} are extremal states for the operators $(\hat{I}^2,\hat{I}_3)$ and $(\hat{j^2},\hat{j_3})$, respectively, and they correspond to the maximally allowed states for a given set of angular momenta $I$ and $j$.
+where the operators $\hat{I}_-$ and $\hat{j}_-$ denote the lowering operators for the intrinsic angular momenta $\vec{I}$ and $\vec{j}$, respectively, and $\mathbf{N}$ plays the role of the normalization constant. One must remark the fact that the states from Eq. \ref{trial-function} are extremal states for the operators $(\hat{I}^2,\hat{I}_3)$ and $(\hat{j^2},\hat{j_3})$, respectively, and they correspond to the maximally allowed states for a given set of angular momenta $I$ and $j$. As an observation, the trial function is an admixture of components of definite $K$, which is consistent with the fact that for a triaxial nucleus, $K$ is not a good quantum number.
+
+The variables $z$ and $s$ from Eq. \ref{trial-function} are complex functions that depend on time, and they play the role of classical coordinates of the phase spaces that describe the motion of the core and the odd particle:
+
+\begin{align}
+    z=\rho e^{i\varphi}\ ,\ s=fe^{i\psi}\ .
+    \label{complex-variable-set}
+\end{align}
+
+In order to obtain a set of classical equations which describe the motion of the system, a new pair of variables are introduced from the ones defined in Eq. \ref{complex-variable-set}. Indeed, defining the variables $(\varphi,r)$ and $(\psi,t)$ with $r$ and $t$ given by the relations:
+
+\begin{align}
+    r=\frac{2I}{1+\rho^2}\ ,\ t=\frac{2j}{1+f^2}\ ,
+\end{align}
+
+where $r\in\left[0,2I\right]$ and $t\in\left[0,2j\right]$, will bring the classical equations of motion (provided by the TDVE), to a straightforward canonical form:
+
+\begin{align}
+    \frac{\partial\mathcal{H}}{\partial r}&=\dot{\varphi}\ ;\ \frac{\partial\mathcal{H}}{\partial \varphi}=-\dot{r}\ , \nonumber\\
+    \frac{\partial\mathcal{H}}{\partial t}&=\dot{\psi}\ ;\ \frac{\partial\mathcal{H}}{\partial \psi}=-\dot{t}\ .
+    \label{eq-motion}
+\end{align}
+
+The function $\mathcal{H}$ denotes the average of the Hamiltonian operator $H$ (Eq. \ref{prm-hamiltonian}) with the trial function $\ket{\Psi_{IjM}}$ given in Eq. \ref{trial-function}, and it plays the role of classical energy. It represents a crucial quantity within the present analysis, at it will provide an insight with regards to the stability of the wobbling motion in $^{163}$Lu, and can help to pinpoint several regions where the wobbling mode is stable/unstable. This analysis will be performed in the following sections.
+
+\begin{align}
+    \mathcal{H}\equiv\mathcal{H}(\bar{q}_\text{core};\bar{q}_\text{s.p.})=\bra{\Psi_{IjM}}H\ket{\Psi_{IjM}}\ ,
+\end{align}
+where the set of coordinates $(\varphi,r)$ and $(\psi,t)$ were conveniently denoted with $\bar{q}_\text{core}$ and $\bar{q}_\text{s.p.}$, respectively, since they describe the motion of the core and that of the odd single-particle.
+
+Starting from the equations of motion given in Eq. \ref{eq-motion}, one can observe that the function $\mathcal{H}$ is a constant of motion, that is $\dot{\mathcal{H}}\equiv0$. This equation will define a surface, a so-called equi-energy surface $\mathcal{H}=\text{const}$. It is worth mentioning the fact that such an equality holds since the entire set of equations of motion emerged from a variational principle. The sign of the Hessian associated to this classical function will indicate its stationary points. Among them, some are minima. One such example of minimum points for $\mathcal{H}$ is the point $p_0\equiv(q_\text{core};q_\text{s.p.})|_\text{min}=(\varphi,r;\psi,t)|_\text{min}=(0,I;0,j)$. The energy function is minimum $\mathcal{H}_\text{min}^{(I,j)}=H(p_0)$ as long as the condition on the MOIs is: $\mathcal{I}_1>\mathcal{I}_2>\mathcal{I}_3$. There is no restriction on $\gamma$.
+
+With a linearization procedure for the equations of motion around the minimum point $p_0$ of $\mathcal{H}$, a dispersion equation will be obtained:
+
+\begin{align}
+    \Omega^4+B\Omega^2+C=0\ .
+\end{align}
+
+The above equation describes a harmonic type of motion for the nuclear system, with the solutions to this algebraic equation as the \emph{wobbling frequencies} $\Omega$. The terms $B$ and $C$ are complex functions of total angular momentum $I$, single particle a.m. $j$, inertial parameters $A_k=1/(2\mathcal{I}_k)\ ,\ k=1,2,3$, single particle potential strength $V$, and triaxiality parameter $\gamma$. In fact, one can conclude that $B$ and $C$ are functions which depend on the parameter set defined in Eq. \ref{parameter-set}: $B=f_B(\mathcal{P},I,j)$ and $C=f_C(\mathcal{P},I,j)$, respectively.
+
+\begin{align}
+ -B=\left[(2I-1)(A_3-A_1)+2jA_1\right]\left[(2I-1)(A_2-A_1)+2jA_1\right]+8A_2A_3Ij+\left(\text{T}_B^1\times\text{T}_B^2\right)\ ,
+ \label{b_term}
+ \end{align}
+ where the terms $\text{T}_B^1$ and $\text{T}_B^2$ are defined defined as:
+ \begin{align}
+ \text{T}_B^1&=\left[(2j-1)(A_3-A_1)+2IA_1+V\frac{2j-1}{j(j+1)}\sqrt{3}(\sqrt{3}\cos\gamma+\sin\gamma)\right]\ , \nonumber \\
+ \text{T}_B^2&=\left[(2j-1)(A_2-A_1)+2IA_1+V\frac{2j-1}{j(j+1)}2\sqrt{3}\sin\gamma\right]\ .
+ \label{b_term-plus}
+\end{align}
+
+\begin{align}
+    C=&\left\{\left[(2I-1)(A_3-A_1)+2jA_1\right]\times\text{T}_C^1
+- 4IjA_3^2\right \}\times \nonumber\\
+      &\times\left\{\left[(2I-1)(A_2-A_1)+2jA_1\right]\times\text{T}_C^2-4IjA_2^2\right\}\ ,
+      \label{c_term}
+\end{align}
+where the terms $\text{T}_C^1$ and $\text{T}_C^2$ are defined defined as:
+\begin{align}
+    \text{T}_C^1&=\left[(2j-1)(A_3-A_1)+2IA_1+V\frac{2j-1}{j(j+1)}\sqrt{3}(\sqrt{3}\cos\gamma+\sin\gamma)\right]\ , \nonumber\\
+    \text{T}_C^2&=\left[(2j-1)(A_2-A_1)+2IA_1+V\frac{2j-1}{j(j+1)}2\sqrt{3}\sin\gamma\right]\ . 
+    \label{c_term-plus}
+\end{align}
+
+It can be seen that the terms which enter in $B$ and $C$, namely $(\text{T}_B^1,\text{T}_B^2)$ from Eq. \ref{b_term-plus} and $(\text{T}_C^1,\text{T}_C^2)$ from Eq. \ref{c_term-plus} that enter in $B$ and $C$ correspond to the quadrupole deformation that causes the single particle to move in the mean-field of the triaxial core. The terms also define the triaxiality that the nucleus achieves once the odd $j_1$ proton couples to the triaxial core, driving the system up to a large (and stable) deformation.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \bibliography{dev-refs}
 
