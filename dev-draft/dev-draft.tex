@@ -212,7 +212,7 @@ Fortunately, the answer is positive: starting from the semi-classical formalism 
 
 Regarding the unique single-particle that couples to the triaxial core, it is natural to pick the $i_{13/2}$ proton (that is $j_1$ from \texttt{W1}). Reasoning behind this choice has to do with the microscopic calculations \cite{jensen2002wobbling,hagemann2003quantized,jensen2004coexisting} that showed stable triaxial structures in the $^{163}$Lu potential energy surface when the triaxial core couples with a highly aligned $j$-shell particle, strongly indicating the $\pi(i_{13/2})$ proton. Keep in mind that a highly aligned $j$-nucleon will \emph{prefer} to keep a certain triaxial deformation when coupled to a core \cite{hamamoto1983intrinsic,hamamoto1987rotational,hamamoto2016interplay} (in the sense that the triaxiality parameter $\gamma$ will have a certain value based on the orbital of the odd nucleon), and using microscopic calculations following the Ultimate Cranker code, it has been shown that a value of $\gamma\approx+20^\text{o}$ is preferred by the odd $\pi(i_{13/2})$ nucleon.
 
-By taking $j_1$ as the sole intruder that couples to a positive core and also a negative core, the sequences with even/odd integer spins for the core does not change. In fact, the coupling schemes can be readily obtained, making sure that the final (experimental) spin sequences for each TSD band is intact. 
+By taking $j_1$ as the sole intruder that couples to a positive core and also a negative core, the sequences with even/odd integer spins for the core do not change. In fact, the coupling schemes can be readily obtained, making sure that the final (experimental) spin sequences for each TSD band is intact. 
 
 \begin{enumerate}[(a)]
     \item Coupling $C'_1$: the odd $j_1$ proton aligns with the core of even-integer spin sequence $R_1=0,2,4,\dots$, with a parity of the $R_1$ core that is positive $\pi(R_1)=+1$.
@@ -220,7 +220,14 @@ By taking $j_1$ as the sole intruder that couples to a positive core and also a 
     \item Coupling $C'_3$: the odd $j_1$ proton aligns with the core with an odd-integer spin sequence $R_2^-=1,3,5,\dots$, which has negative parity $\pi(R_2^-)=-1$.
 \end{enumerate}
 
-From the three schemes defined above, it is clear that $C'_1$ corresponds to the yrast $TSD_1$, $C'_2$ to the ground state $TSD_2$, and finally $C'_3$ to the ground state $TSD_4$. Obviously, the odd valence nucleon $j_1$ has a positive parity $\pi_{j_1}=+1$. There has not been attributed a coupling scheme for $TSD_3$, since this band still remains as the one-wobbling phonon excitation that is built on top of $TSD_2$ with the action of a phonon operator which will be characterized later on.
+From the three schemes defined above, it is clear that $C'_1$ corresponds to the yrast $TSD_1$, $C'_2$ to the ground state $TSD_2$, and finally $C'_3$ to the ground state $TSD_4$. Obviously, the odd valence nucleon $j_1$ has a positive parity $\pi_{j_1}=+1$. There has not been attributed a coupling scheme for $TSD_3$, since this band still remains as the one-wobbling phonon excitation that is built on top of $TSD_2$ with the action of a phonon operator which will be characterized later on. The three couplings are schematically represented in Figure \ref{three-couplings}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{figs/coupling_schemes_C1C2C3.pdf}
+    \caption{A schematic representation with the three coupling schemes that characterize the \texttt{W2} model. The same odd particle (the $j_1=i_{13/2}$ proton) is coupling with two positive cores with even/odd integer spin sequences for $TSD_1$/$TSD_2$, and one negative core in the case of $TSD_4$. The total spin of the system precesses around the axis with the largest MOI, as it is the case for a triaxial rotor.}
+    \label{three-couplings}
+\end{figure}
 
 It is expected that the Hamiltonian of the system will keep a similar form, since there are no new interactions or modified particle-core states added in the problem. The argument holds because the coupling scheme which involves the fourth triaxial band $TSD_4$ only the single-particle's angular momentum state changes, but the core has negative parity. As a result, the treatment of the problem will follow the same manner as it did in the \texttt{W1} case.
 
@@ -323,9 +330,9 @@ where the set of coordinates $(\varphi,r)$ and $(\psi,t)$ were conveniently deno
 Starting from the equations of motion given in Eq. \ref{eq-motion}, one can observe that the function $\mathcal{H}$ is a constant of motion, that is $\dot{\mathcal{H}}\equiv0$. This equation will define a surface, a so-called equi-energy surface $\mathcal{H}=\text{const}$. It is worth mentioning the fact that such an equality holds since the entire set of equations of motion emerged from a variational principle. The sign of the Hessian associated to this classical function will indicate its stationary points. Among them, some are minima. One such example of minimum points for $\mathcal{H}$ is the point $p_0\equiv(q_\text{core};q_\text{s.p.})|_\text{min}=(\varphi,r;\psi,t)|_\text{min}=(0,I;0,j)$. The energy function is minimum $\mathcal{H}_\text{min}^{(I,j)}=H(p_0)$ as long as the condition on the MOIs is: $\mathcal{I}_1>\mathcal{I}_2>\mathcal{I}_3$. There is no restriction on $\gamma$.
 
 With a linearization procedure for the equations of motion around the minimum point $p_0$ of $\mathcal{H}$, a dispersion equation will be obtained:
-
 \begin{align}
     \Omega^4+B\Omega^2+C=0\ .
+    \label{dispersion-eq}
 \end{align}
 
 The above equation describes a harmonic type of motion for the nuclear system, with the solutions to this algebraic equation as the \emph{wobbling frequencies} $\Omega$. The terms $B$ and $C$ are complex functions of total angular momentum $I$, single particle a.m. $j$, inertial parameters $A_k=1/(2\mathcal{I}_k)\ ,\ k=1,2,3$, single particle potential strength $V$, and triaxiality parameter $\gamma$. In fact, one can conclude that $B$ and $C$ are functions which depend on the parameter set defined in Eq. \ref{parameter-set}: $B=f_B(\mathcal{P},I,j)$ and $C=f_C(\mathcal{P},I,j)$, respectively.
@@ -354,7 +361,53 @@ where the terms $\text{T}_C^1$ and $\text{T}_C^2$ are defined defined as:
     \label{c_term-plus}
 \end{align}
 
-It can be seen that the terms which enter in $B$ and $C$, namely $(\text{T}_B^1,\text{T}_B^2)$ from Eq. \ref{b_term-plus} and $(\text{T}_C^1,\text{T}_C^2)$ from Eq. \ref{c_term-plus} that enter in $B$ and $C$ correspond to the quadrupole deformation that causes the single particle to move in the mean-field of the triaxial core. The terms also define the triaxiality that the nucleus achieves once the odd $j_1$ proton couples to the triaxial core, driving the system up to a large (and stable) deformation.
+It can be seen that the terms which enter in $B$ and $C$, namely $(\text{T}_B^1,\text{T}_B^2)$ from Eq. \ref{b_term-plus} and $(\text{T}_C^1,\text{T}_C^2)$ from Eq. \ref{c_term-plus} that enter in $B$ and $C$ correspond to the quadrupole deformation that causes the single particle to move in the mean-field of the triaxial core. The terms also define the triaxiality that the nucleus achieves once the odd proton couples to the triaxial core, driving the system up to a large (and stable) deformation.
+
+Going back to Eq. \ref{dispersion-eq}, under the restrictions for the MOIs defined above, the dispersion equation admits two real and positive solutions (hereafter denoted with $\Omega_1^I$ and $\Omega_2^I$, where $\Omega_1^I<\Omega_2^I$) defined for $j_1=i_{13/2}$, given by:
+\begin{align}
+    \Omega_{1,2}^I=\sqrt{\frac{1}{2}\left(-B\mp(B^2-4C)^{1/2}\right)}
+    \label{wobbling-frequencies}
+\end{align}
+
+These two solutions are interpreted as \emph{wobbling frequencies} associated to the motion of the core, and the motion of the odd-particle. As such, each wobbling frequency has an associated wobbling-phonon number:
+\begin{align}
+    \Omega_1^I \to n_{w_1}\ ;\ \Omega_2^I \to n_{w_2}\ .
+\end{align}
+
+It is worth noting that they take part in the energy states belonging to all the bands, including the yrast ones, however, in that case, the zero-point motion is considered (meaning that the two wobbling quanta $(\Omega_1^I,\Omega_2^I)$ are halved).
+
+Now that the energy function $\mathcal{H}$ was defined in terms of classical coordinates $\bar{q}_\text{core}$ and $\bar{q}_\text{s.p.}$, and the wobbling frequencies were obtained, it is possible to define the analytical expressions for the four TSD bands of $^{163}$Lu. Indeed, taking care of the coupling scheme for each band, they can be formulated as follows:
+
+\begin{align}
+    E_\text{TSD1}^I&=\epsilon_j+\mathcal{H}_\text{min}^{(I,j)}+\mathcal{F}_{00}^I\ ,\ I=13/2,17/2,21/2\dots \nonumber \\
+    E_\text{TSD2}^I&=\epsilon_j^1+\mathcal{H}_\text{min}^{(I,j)}+\mathcal{F}_{00}^I\ ,\ I=27/2,31/2,35/2\dots \nonumber \\
+    E_\text{TSD3}^I&=\epsilon_j+\mathcal{H}_\text{min}^{(I-1,j)}+\mathcal{F}_{10}^I\ ,\ I=33/2,37/2,41/2\dots \nonumber \\
+    E_\text{TSD4}^I&=\epsilon_j^2+\mathcal{H}_\text{min}^{(I,j)}+\mathcal{F}_{00}^I\ ,\ I=47/2,51/2,55/2\dots\ ,
+    \label{wobbling_energies}
+\end{align}
+where $\mathcal{F}_{n_{w_1}n_{w_2}}^I$ is a function of the wobbling frequencies, defined accordingly to the wobbling phonon numbers $n_{w_1},n_{w_2}$:
+\begin{align}
+    \mathcal{F}_{n_{w_1}n_{w_2}}^I=\Omega_1^I\left(n_{w_1}+\frac{1}{2}\right)+\Omega_2^I\left(n_{w_2}+\frac{1}{2}\right)
+\end{align}
+and $\mathcal{H}_\text{min}^{(I,j)}$ is the classical energy evaluated in its minimal point $p_0$.
+
+A few aspects regarding the energy spectrum defined in Eq. \ref{wobbling_energies} are worth mentioning. To each band there is a specific energy $\epsilon_j$ associated to the single-particle state from the orbital that it belongs to. In this case, the odd-proton $j_1$ with $j=13/2$ from the $i$-orbital is the one that couples to the triaxial core. However, for the bands $TSD_2$ and $TSD_4$, a different re-normalization is considered, since the former is the unfavored partner within the structure, and the latter is the negative parity partner within the band structure. These quantities will shift the overall energy states belonging to the two bands, each by a different amount. As a result, both $\epsilon_j^1$ and $\epsilon_j^2$ will be adjusted throughout the the numerical calculations such that the energy spectrum is best reproduced. Another aspect concerns the band $TSD_3$; since this is the only excited wobbling band within the family, its configuration is built on top of $TSD_2$, with the action of a single phonon ($n_{w_1}=0$) operator, that is the wobbling frequency $\Omega_1^I$. Consequently, an energy state $I$ belonging to $TSD_3$ is obtained from a state $I-1$ from $TSD_2$. In Table \ref{energy-states-tabular}, the rest of the wobbling phonon numbers are mentioned, with the parity, signature, and coupling scheme for each band in particular.
+
+\begin{table}
+\centering
+\begin{tabular}{llllll}
+\hline
+Band & $n_{w_1}$ & $n_{w_2}$ & $\pi$ & $\alpha$ & Coupling scheme\\
+\hline
+\hline
+   $TSD_1$  &   0        &    0       & +1      &    +1/2      &   $C'_1$              \\
+   $TSD_2$  &     0      &      0     &   +1    &  -1/2        &   $C'_2$              \\
+   $TSD_3$  &   1        &      0     &     +1  &     +1/2    &  Built on $TSD_2$                \\
+   $TSD_4$  &    0       &      0     &      -1 &   -1/2       &    $C'_3$            
+\end{tabular}
+\caption{The wobbling phonon numbers, parities, signatures, and coupling schemes assigned to each triaxial band in $^{163}$Lu, within the \texttt{W2} model. The three coupling schemes were defined in Section \ref{subsection:w2}.}
+\label{energy-states-tabular}
+\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
