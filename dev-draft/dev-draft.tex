@@ -86,7 +86,7 @@ With time, several nuclei in which WM occurs were also reported in regions of sm
 
 Some additional progress towards a more comprehensive wobbling spectroscopy was made in the $A\approx100$ mass region, with an experimental evidence for $^{105}$Pd that showed of two such bands that are built on a $\nu(h_{11/2})$ configuration, the first one so far in which a valence neutron couples to the triaxial core \cite{timar2019experimental}. The resulting configuration drives the nuclear system up to deformation $\epsilon\approx0.26$.
 
-The heaviest nuclei known so far in which WM has been experimentally observed are the isotopes $Z=79$ with $A=183$ \cite{nandi2020first} and $A=187$ \cite{sensharma2020longitudinal}, respectively. However, for the case of $^{187}$Au, there is an ongoing debate \cite{guo2020risk} whether the two wobbling bands ($n_w=0$ and $n_w=1$) are bands with wobbling character, or if they are of magnetic nature (which would exclude the wobbling phonon interpretation).
+The heaviest nuclei known so far in which WM has been experimentally observed are the isotopes $Z=79$ with $A=183$ \cite{nandi2020first} and $A=187$ \cite{sensharma2020longitudinal}, respectively. However, for the case of $^{187}$Au, there is an ongoing investigation \cite{guo2020risk} whether the two wobbling bands ($n_w=0$ and $n_w=1$) are bands with wobbling character, or if they are of magnetic nature (which would exclude the wobbling phonon interpretation).
 
 Regarding the wobbling motion for the even-even nuclei (behavior that was described above through the schematic representation from Figure \ref{simple-wobbling-family}), the experimental results are very fragmentary, with unclear evidence on such collective behavior in nuclei. However, some embryos of even-even wobblers have been reported in the recent years. For example, the $^{112}$Ru ($Z=44$) nucleus has three wobbling bands \cite{hamilton2010super}, with two of them being excited (one- and two-phonon wobbling bands). Another example is the even-even $^{130}$Ba ($Z=56$) \cite{petrache2019diversity,wang2020two,chen2019transverse}. Indeed, for $^{112}$Ru, the ground band together with the odd and even spin members of the $\gamma$ band with were interpreted as zero-(yrast), one-, and two-phonon wobbling bands. Unfortunately, since there are no data concerning the electromagnetic transitions, its wobbling character is still unclear. On the other hand, for the nucleus $^{130}$Ba, from its recent study regarding the band structure \cite{petrache2019diversity}, a pair of bands with even and odd spins were proposed as zero- and one-phonon wobbling bands, respectively. What it is worth noting for this case is the fact that these two bands are built on a configuration in which two aligned protons that emerge from the bottom of $h_{j=11/2}$ shell couple with the triaxial core. One remarks the change in nature of the wobbling motion from a purely collective form, but in the presence of two aligned quasiparticles \cite{wang2020two}.
 
@@ -408,6 +408,39 @@ Band & $n_{w_1}$ & $n_{w_2}$ & $\pi$ & $\alpha$ & Coupling scheme\\
 \caption{The wobbling phonon numbers, parities, signatures, and coupling schemes assigned to each triaxial band in $^{163}$Lu, within the \texttt{W2} model. The three coupling schemes were defined in Section \ref{subsection:w2}.}
 \label{energy-states-tabular}
 \end{table}
+
+\subsection{Parity quantum number for the wave-function}
+
+In \texttt{W1} it was shown that signature emerges from the calculations on the total wave-function as a good quantum number for this triaxial system. This is why in \cite{raduta2020approach} the bands $TSD_1$ and $TSD_2$ appeared as Signature Partner Bands (SPB). In \texttt{W2}, this property still stands.
+
+Since the backbone of the current work started from the need for a single odd-particle that couples to a triaxial core in $^{163}$Lu, one has to look at the band $TSD_4$ (which was interpreted as having a different nucleon: $j_2$ with $j=9/2$ from the $h$-orbital), and see if its differentiating properties can be linked to \emph{main group} of bands (namely $TSD_{1,2,3}$). Indeed, from the experimental measurements regarding spin and parity assignment \cite{jensen2004coexisting}, it turns out that the parity of the rotational states are negative. Therefore, a forensic analysis on this quantum property should be considered as the necessary ingredient in a unified description of all four bands.
+
+Choosing the rotation axis as the 2-axis, one can define the parity operator as a product of the complex conjugation operation and a rotation of angle $\pi$ around this axis: $P=e^{-i\pi\hat{I}_2}C$. Obviously, $\hat{I}_2$ represents the rotation operator and $C$ the operator performs a complex conjugation when applied on a wave-function. The total parity operator is defined as the product of an operator corresponding to the core and one corresponding to the single particle:
+\begin{align}
+    \mathcal{P}_T=P_\text{core}P_\text{s.p.}\ .
+    \label{parity-operator}
+\end{align}
+
+Acting with the total parity operator defined above, on the trial function $\Psi(\bar{q}_\text{core};\bar{q}_\text{s.p.})$ associated to the triaxial system (which was defined in Eq. \ref{trial-function}), the following is obtained:
+\begin{align}
+    \mathcal{P}_T\Psi(r,\varphi;t,\psi)=\Psi(r,\varphi+\pi;t,\psi+\pi)\overset{\mathrm{not.}}{=}\ \bar{\Psi}.
+    \label{parity-action}
+\end{align}
+
+Keep in mind that the set of classical phase space which describe the individual dynamics of the core and the single-particle, namely $\bar{q}_\text{core}$ and $\bar{q}_\text{s.p}$, were defined as $(r,\varphi)$ and $(t,\psi)$.
+
+The classical energy function $\mathcal{H}$ has an invariance property at changing the angles with $\pi$:
+\begin{align}
+    \mathcal{H}(r,\varphi;t,\psi)=\mathcal{H}(r,\varphi+\pi;t,\psi+\pi)\ .
+    \label{classical-energy-invariance}
+\end{align}
+
+From Eqs. \ref{parity-action} and \ref{classical-energy-invariance}, it can be concluded that the wave-function describing the triaxial system $\Psi$ and its image through $\mathcal{P}_T$ , $\bar{\Psi}$,  are two linearly dependent functions which differ only by a multiplicative constant $\mu$, with $|\mu|=1$. Thus, $\mu$ can either be -1 or +1, such that:
+\begin{align}
+    \Psi(r,\varphi+\pi;t,\psi+\pi)=\pm\Psi(r,\varphi;t,\psi)\ .
+\end{align}
+
+The above result concludes the parity analysis for the wave-function, showing that the triaxial rotor admits eigenfunctions (i.e., deformed rotational states) of negative parity. Therefore, a single wave-function characterized by the coupling of a triaxial core to the odd proton $i_{13/2}$ is describing both positive parity states ($\in TSD_{1,2,3}$) as well as negative parity states ($\in TSD_4$). This analysis, together with the fact that $TSD_2$ and $TSD_4$ have the same a.m. sequences (although $TSD_2$ has more states with low spin than $TSD_4$) suggest the fact that these two bands might be Parity Partners.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
