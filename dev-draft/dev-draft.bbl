@@ -369,6 +369,29 @@ Kosai Tanabe and Kazuko Sugawara-Tanabe.
   odd-mass nucleus and the analysis of pr 135’”.
 \newblock {\em Physical Review C}, 97(6):069802, 2018.
 
+\bibitem{sun1994varied}
+Yang Sun, Shuxian Wen, et~al.
+\newblock Varied signature splitting phenomena in odd proton nuclei.
+\newblock {\em Physical Review C}, 50(5):2351, 1994.
+
+\bibitem{khalaf11properties}
+AM~Khalaf, Hayam Yassin, and Eman R~Abo Elyazeed.
+\newblock Properties of signature partner superdeformed bands in mercury
+  nuclei.
+\newblock {\em Journal: JOURNAL OF ADVANCES IN PHYSICS}, 11(1), 2015.
+
+\bibitem{uma2015deltai}
+VS~Uma and Alpana Goel.
+\newblock $\delta$i= 1 staggering in signature partner pairs of super-deformed
+  rotational bands in the a= 190 mass region.
+\newblock {\em The European Physical Journal Plus}, 130(6):1--6, 2015.
+
+\bibitem{mittal2016signature}
+HM~Mittal and Anshul Dadwal.
+\newblock Signature partner pairs of superdeformed rotational bands in 192tl.
+\newblock In {\em Proceedings of the DAE-BRNS Symp. on Nucl. Phys}, volume~61,
+  page 134, 2016.
+
 \bibitem{hamamoto1983intrinsic}
 Ikuko Hamamoto and Ben Mottelson.
 \newblock On the intrinsic spectra of rotating nuclei with tri-axial shape.
@@ -411,5 +434,34 @@ AA~RADUTA and CM~Raduta.
   even-even and even-odd nuclei.
 \newblock {\em ANNALS OF THE UNIVERSITY OF CRAIOVA, PHYSICS}, 21(1):28--53,
   2011.
+
+\bibitem{meyer1975collective}
+J~Meyer-ter Vehn.
+\newblock Collective model description of transitional odd-a nuclei:(i). the
+  triaxial-rotor-plus-particle model.
+\newblock {\em Nuclear Physics A}, 249(1):111--140, 1975.
+
+\bibitem{wang2008description}
+SY~Wang, SQ~Zhang, B~Qi, J~Peng, JM~Yao, J~Meng, et~al.
+\newblock Description of $\pi$ g 9/2 $\nu$ h 11/2 doublet bands in rh 106.
+\newblock {\em Physical Review C}, 77(3):034314, 2008.
+
+\bibitem{peng2003description}
+J~Peng, J~Meng, and SQ~Zhang.
+\newblock Description of chiral doublets in a~ 130 nuclei and the possible
+  chiral doublets in a~ 100 nuclei.
+\newblock {\em Physical Review C}, 68(4):044324, 2003.
+
+\bibitem{koike2004chiral}
+T~Koike, K~Starosta, and I~Hamamoto.
+\newblock Chiral bands, dynamical spontaneous symmetry breaking, and the
+  selection rule for electromagnetic transitions in the chiral geometry.
+\newblock {\em Physical review letters}, 93(17):172502, 2004.
+
+\bibitem{wang2007doublet}
+SY~Wang, SQ~Zhang, B~Qi, and J~Meng.
+\newblock Doublet bands in cs 126 in the triaxial rotor model coupled with two
+  quasiparticles.
+\newblock {\em Physical Review C}, 75(2):024309, 2007.
 
 \end{thebibliography}
