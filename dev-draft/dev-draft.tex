@@ -653,6 +653,28 @@ Another useful insight would be the study of the classical energy function $\mat
     \label{energy-function-min-point-evolution}
 \end{figure}
 
+\subsection{Comment on the wobbling nature of $^{163}$Lu}
+
+It is worthwhile discussing the results obtained regarding the wobbling spectrum of $^{163}$Lu. Indeed, using a fitting procedure which minimized the $\chi^2$ function, it was possible to find a parameter set $\mathcal{P}$ that when applied in the calculations for the excitation energies, an agreement with the experimental data is observed. However, in the current state, there is no clear evidence on whether the formalism \texttt{W2} predicts a TW or a LW behavior for the nucleus. According to \cite{frauendorf2014transverse}, the wobbling character is given by the coupling of the odd particle which aligns parallel (LW) or perpendicular (TW) to the axis with largest MOI. But in order to see this within the measured data, an interpretation of the wobbling energy as it was defined in Eq. \ref{wobbling-energy-relative} must be performed. Indeed, according to the definition, one has to subtract an energy state within the first excited wobbling band (the one-wobbling-phonon band) from the average of its adjacent energies that belong to the yrast partner. In the present calculations, the first excited state is $TSD_3$, with its yrast partner being the band $TSD_2$. Following this procedure, both the experimental wobbling energies, as well as the theoretical ones were calculated according to the Eq. \ref{wobbling-energy-relative}. The obtained results are plotted in Figure \ref{wobbling-energies_th_exp}.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.65]{dev-draft/figs/wobbling_energy_ThExp.pdf}
+    \caption{The wobbling energies for $^{163}$Lu given as $E_\text{wob}=E_1(I)-\frac{1}{2}(E_0(I+1)+E_0(I-1))$. According to the current formalism, the sets of energies $E_1$ belong to $TSD_3$, while $E_0$ correspond to $TSD_2$. Experimental data is taken from \cite{reich2010nuclear}. Theoretical values were calculated with the parameter set $\mathcal{P}$.}
+    \label{wobbling-energies_th_exp}
+\end{figure}
+
+From the behavior of $E_\text{wob}$ from Figure \ref{wobbling-energies_th_exp}, it can be seen that the theoretical wobbling spectrum is clearly an increasing function of angular momentum $I$, suggesting that $^{163}$Lu would have a LW character. This contrasts the current interpretation on which the wobbling energies are decreasing functions with the increase in spin. However, within those formalisms \cite{frauendorf2014transverse,frauendorf2018comment}, the wobbling energies are calculated with $TSD_2$ and $TSD_1$ instead, since the one-wobbling-phonon band is $TSD_2$, which is inconsistent with the \texttt{W2} approach.
+
+By contrast, analyzing the experimental data from Figure \ref{wobbling-energies_th_exp}, a slight increase with spin can also be observed, also suggesting that the coupling in $^{163}$Lu achieves a LW character. Indeed, from the lower limit of around $11/2\ \hbar$ and up to a spin of about $39/2\ \hbar$, the energy is increasing, then starts to decrease once $I\geq39/2\ \hbar$. The increasing behavior of the theoretical data also appears to be quenched in the high-spin limit, indicating that indeed, once the nucleus reaches high rotational states, a change in the wobbling regime might emerge, and the nucleus can transition from a wobbling regime (LW) to another (TW).
+
+In a recent work \cite{nandi2020first}, an observation of two wobbling bands was made for $^{183}$Au (as it was already mentioned throughout the introduction). The bands are based on a positive $\pi(i_{13/2})$ and negative $\pi(h_{9/2})$ parity configuration. The remarking aspect of this research is that within a PRM model amended with the HFA (harmonic frozen alignment) approximation, it results that both bands have a transverse character (TW). However, they have different behavior in respect to the wobbling energies. Namely, this quantity increases (decreases) with spin for the positive (negative) parity configuration (see Figure 3 from \cite{nandi2020first}). According to the same study, the increasing trend of the positive parity band with spin has indeed a TW character, but it might be the \emph{initial part} of a TW band predicted by Frauendorf \cite{frauendorf2014transverse} for $^{163}$Lu, but never observed. This indicate that a increasing/decreasing behavior for $E_\text{wob}$ is not enough evidence for asserting a wobbling character on a triaxial nucleus (at least, not without some strong constraints on the coupling scheme between the core and the odd particle).
+
+Concluding this comment on the wobbling nature for $^{163}$Lu, if the behavior of the wobbling energies with spin is the sole player in determining the wobbling character of a nucleus, then one could argue that indeed, based on the current results, $^{163}$Lu behaves as a longitudinal wobbler. On the other hand, considering the newly obtained results discussed in the previous paragraph, the evidence is not enough for making a clear assumption on the type of wobbling motion which occurs.
+
+\subsection{Classical trajectories - 3-dimensional representation}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliography{dev-refs}
 \end{document}
