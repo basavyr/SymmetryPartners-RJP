@@ -48,7 +48,6 @@ Chirality consists in the existence of a pair of chiral twin bands with an ident
 On the other hand, the experimental observations regarding wobbling motion have been quite rare, even though this kind of collective motion has been theoretically predicted almost 50 years ago by Bohr and Mottelson \cite{bohr1998nuclear} when they were investigating the rotational modes of a triaxial nucleus by means of a Triaxial Rotor Model (TRM). Therein, they showed that for a triaxial rotor, the main rotational motion is around the axis with the largest moment of inertia (MOI), as it is energetically the most favorable. This mode is quantum mechanically disturbed by the rotation around the other two axes, since rotation around any of the three principal axes of the system are possible, due to the anisotropy of the three different MOIs (that is $\mathcal{I}_1\neq\mathcal{I}_2\neq\mathcal{I}_3$).
 
 W.M. can be viewed as the quantum analogue to the motion of the asymmetric top, whose rotation around the axis with largest MOI is energetically favored and stable. A uniform rotation about this axis will have the lowest energy for a given angular momentum (spin). As the energy increases, this axis will start to precess with a harmonic type of oscillation about the space-fixed angular momentum vector, giving rise to a family of wobbling bands, each characterized by a wobbling phonon number $n_w$. The resulting quantal spectrum will be a sequence of rotational $\Delta I=2$ bands, with alternating signature number for each wobbling excitation. According to \cite{bohr1998nuclear}, it is possible to obtain the wobbling spectrum of any triaxial rigid rotor, by using the information related to its angular momentum $I$, moments of inertia $\mathcal{I}_{1,2,3}$, rotational frequency $\omega_\text{rot}$, wobbling frequency $\omega_\text{wob}$ as follows:
-
 \begin{align}
     E_\text{rot}=\sum_i\left(\frac{\hbar^2}{2\mathcal{I}_k}\right)I^2_k\approx\frac{\hbar^2}{2\mathcal{I}_1}I(I+1)+\hbar\omega_\text{wob}\left(n_w+\frac{1}{2}\right)\ , \label{wobbling_eq}
 \end{align}
@@ -93,7 +92,6 @@ Regarding the wobbling motion for the even-even nuclei (behavior that was descri
 Regarding the interpretation of the wobbling motion which occurs in the nuclei that were mentioned above, it is mandatory to discuss some aspects related to its behavior with the increase in total angular momentum (nuclear spin). It is a long lasting debate on whether certain nuclei behave as \emph{longitudinal wobblers} (LW) or \emph{transverse wobblers} (TW). The concepts of LW and TW emerged from an extensive study done by Frauendorf et. al. \cite{frauendorf2014transverse} in which the team discussed the possible coupling schemes that a valence nucleon can create with the triaxial core, thus giving rise to two possible scenarios. Based on microscopic calculations using the Quasiparticle Triaxial Rotor (QTR) model, they showed that if the odd valance nucleon aligns its angular momentum vector $\vec{j}$ with the axis of largest MOI, the nuclear system is of longitudinal wobbling character. On the other hand, if the odd nucleon aligns its a.m. vector $\vec{j}$ with an axis perpendicular to the one with largest MOI, then the nuclear system has a transverse wobbling character. From the microscopic calculations, it was shown that for LW, the wobbling energy $E_\text{wob}$ (see Eq. \ref{wobbling-energy-relative}) has an \emph{increasing} behavior with an increase in spin, while for TW the energy $E_\text{wob}$ \emph{decreases} with spin.
 
 Within the nuclei that were mentioned above, most of them are of TW type, with only $^{133}$La \cite{biswas2019longitudinal}, $^{127}$Xe \cite{chakraborty2020multiphonon}, and $^{183,187}$Au \cite{nandi2020first,sensharma2020longitudinal} being nuclei with LW character. The energy that characterizes the type of wobbling in a nuclear system is the energy of the first excited band (the one-phonon $n_w=1$ wobbling band) relative to the yrast ground band (zero-phonon $n_w=0$ wobbling band):
-
 \begin{align}
     E_\text{wob}=E_{1}(I)-\left(\frac{E_0(I+1)+E_0(I-1)}{2}\right)\ ,
     \label{wobbling-energy-relative}
@@ -158,19 +156,16 @@ Using \texttt{W1}, the final results pointed out to a largest MOI corresponding 
 
 
 A final aspect that needs to be mentioned regarding \texttt{W1} has to do with the interpretation of $TSD_1$ and $TSD_2$ as being Signature Partner Bands (SPB). Signature \cite{bohr1998nuclear} is a quantum property which appears in deformed systems. It is strictly related to the invariance of a system with quadrupole deformation (its nuclear wave-function) to a rotation by an angle $\pi$ around a principal axis. For example, a rotation around the $x$-axis will be defined as an operator:
-
 \begin{align}
     \hat{R}_x=e^{i\pi\hat{I}_x}\ .
 \end{align}
 
 As for the framework used in \cite{raduta2020approach,raduta2020towards}, due to the wave-function describing the system being written as a product between the $\ket{I}$ basis state corresponding to the total angular momentum and the single-particle basis state $\ket{j}$, the rotation operator used in \texttt{W1} achieves the following form:
-
 \begin{align}
     \hat{R}_x(\pi)=e^{-i\pi\hat{I}_x}\otimes e^{-i\pi\hat{j}_x}\ .
 \end{align}
 
 If the system has an axial symmetry, only the rotation around any of the principal axes that are perpendicular to the symmetry one can define the signature quantum number. Consequently, signature is a property specific to a deformed system and it translates to a so-called \emph{deformation invariance} with respect to the space and time reflection properties \cite{bohr1998nuclear}. For an even-even nucleus, the signature operator $\hat{R}_x$ has two eigenvalues, -1 and 1. For the even-odd case, the eigenvalues are $-i$ and $+i$, and depending on its total spin, the signatures can have to values, given by the following assignment:
-
 \begin{align}
     \alpha_I=\frac{1}{2}\left(-1\right)^{I-1/2}\ .
     \label{signature-formula-odd-nuclei}
@@ -247,27 +242,25 @@ Similar structures with alternating positive-negative parity bands have been als
 In this section, a description of the framework used for obtaining the wobbling spectrum of $^{163}$Lu is made. As stated in the previous section, the system is described with a similar Hamiltonian used in \texttt{W1}, namely the Hamiltonian for a triaxial PRM model.
 
 \begin{align}
-    H=H_\text{rot}+H_\text{s.p.}\ .
+    H=H_\text{core}+H_\text{s.p.}\ .
     \label{prm-hamiltonian}
 \end{align}
 
-The Hamiltonian in Eq. \ref{prm-hamiltonian} describes a system in which an odd $j$ quasiparticle interacts with a triaxial even-even core, where the odd nucleon is moving in a quadrupole deformed mean field that is generated by the core itself. As such, the first $H_\text{rot}$ term in the Hamiltonian corresponds describes the motion triaxial core, while the second term $H_\text{s.p.}$ represents the aligned valence proton ($j_1$ in this case).
+The Hamiltonian in Eq. \ref{prm-hamiltonian} describes a system in which an odd $j$ quasiparticle interacts with a triaxial even-even core, where the odd nucleon is moving in a quadrupole deformed mean field that is generated by the core itself. As such, the first $H_\text{core}$ term in the Hamiltonian corresponds describes the motion triaxial core, while the second term $H_\text{s.p.}$ represents the aligned valence proton ($j_1$ in this case).
 
 Indeed, the core Hamiltonian is given by:
 \begin{align}
-    H_\text{rot}=\sum_{i=1,2,3}\frac{1}{2\mathcal{I}_i}(I_i-j_i)^2\ ,
+    H_\text{core}=\sum_{i=1,2,3}\frac{1}{2\mathcal{I}_i}(I_i-j_i)^2\ ,
     \label{core-hamiltonian}
 \end{align}
 where the core angular momentum is $\vec{R}=\vec{I}-\vec{j}$ and the terms $\mathcal{I}_i$ represent the moments of inertia for triaxial ellipsoid along the principal axes. These three moments of inertia will be considered as free parameters in the present calculations, but, compared to the work \texttt{W1}, a unique set of MOIs will be attributed to the four bands, since the triaxial core will create an alignment with a unique single particle, that is $j_1$. Because of this, there is not option for their nature (i.e., rigid or hydrodynamic).
 
 The single-particle Hamiltonian from Eq. \ref{prm-hamiltonian} is derived from the well-known Nilsson potential \cite{meyer1975collective,wang2008description}:
-
 \begin{align}
     h(\beta_2,\gamma)=C\left\{\cos\gamma Y_{20}(\theta,\varphi)+\frac{\sin\gamma}{\sqrt{2}}\left[Y_{22}(\theta,\varphi)+Y_{2-2}(\theta,\varphi)\right]\right\}\ ,
     \label{nilsson-potential}
 \end{align}
 where the coupling parameter $C$ causes the level splitting in the deformed field and it is directly proportional to the quadrupole deformation $\beta_2$. The potential $h$ from Eq. \ref{nilsson-potential} is written in terms of the quadrupole deformation and triaxiality parameter that play the role of deformation parameters within a triaxial system $(\beta_2,\gamma)$. Its expression using the coupling parameter $C$ is widely used when working with a particle-rotor-model \cite{peng2003description,koike2004chiral,wang2007doublet}. In our case, by applying a Wigner-Eckart theorem for the single-j particle, the following expression for $H_\text{s.p.}$ will be obtained:
-
 \begin{align}
     H_\text{s.p.}=\frac{V}{j(j+1)}\left[\cos\gamma(3j_3^2-\vec{j}^2)-\sqrt{3}\sin\gamma(j_1^2-j_2^2)\right]+\epsilon_j\ .
     \label{single-particle-hamiltonian}
@@ -278,21 +271,18 @@ This term describes the motion of an odd particle with angular momentum $j$ in a
 Regarding the triaxial deformation $\gamma$ which enters in Eq. \ref{single-particle-hamiltonian}, its value will be considered as another free parameter of the current problem. In other words, having $V$ and $\gamma$ as free parameters means that the system will be described by its deformation parameters which will be obtained through a fitting procedure, keeping an agreement with the experimental data regarding the excitation energies of the rotational states belonging to $TSD_{1,2,3,4}$.
 
 From Eqs. \ref{core-hamiltonian} and \ref{single-particle-hamiltonian}, the free parameter set can be obtained, hereafter denoted by $\mathcal{P}$. It comprises three moments of inertia, the single particle potential strength, and the triaxial deformation. As such, $\mathcal{P}$ can be written as:
-
 \begin{align}
     \mathcal{P}=\left[\mathcal{I}_1,\mathcal{I}_2,\mathcal{I}_3,V,\gamma\right]\ .
     \label{parameter-set}
 \end{align}
 
 Solving the problem of \texttt{W2} is equivalent to finding the eigenvalues of $H$ given in Eq. \ref{prm-hamiltonian}. In a similar approach as in \texttt{W1}, the eigenvalues of interest are obtained on the base of a semi-classical approach. Thus, the first step is to perform a de-quantization procedure on $H$ through a TDVE \cite{raduta2007semiclassical,budaca2018tilted,raduta2017semiclassical}:
-
 \begin{align}
     \delta\int_0^t\bra{\Psi_{IjM}}H-i\frac{\partial}{\partial t'}\ket{\Psi_{IjM}}dt'=0\ .
     \label{tdve}
 \end{align}
 
 Working within a semi-classical approach allows one to keep a close contact with the system's dynamics in terms of \emph{friendly} and \emph{familiar} equations of motion and generalized coordinates. The trial function from Eq. \ref{tdve} is carefully chosen as a product of two basis states comprising the states with total angular momentum $I$ and $j$, respectively:
-
 \begin{align}
     \ket{\Psi_{IjM}}=\mathbf{N}e^{z\hat{I}_-}e^{s\hat{j}_-}\ket{IMI}\ket{jj}\ ,
     \label{trial-function}
@@ -300,20 +290,17 @@ Working within a semi-classical approach allows one to keep a close contact with
 where the operators $\hat{I}_-$ and $\hat{j}_-$ denote the lowering operators for the intrinsic angular momenta $\vec{I}$ and $\vec{j}$, respectively, and $\mathbf{N}$ plays the role of the normalization constant. One must remark the fact that the states from Eq. \ref{trial-function} are extremal states for the operators $(\hat{I}^2,\hat{I}_3)$ and $(\hat{j^2},\hat{j_3})$, respectively, and they correspond to the maximally allowed states for a given set of angular momenta $I$ and $j$. As an observation, the trial function is an admixture of components of definite $K$, which is consistent with the fact that for a triaxial nucleus, $K$ is not a good quantum number.
 
 The variables $z$ and $s$ from Eq. \ref{trial-function} are complex functions that depend on time, and they play the role of classical coordinates of the phase spaces that describe the motion of the core and the odd particle:
-
 \begin{align}
     z=\rho e^{i\varphi}\ ,\ s=fe^{i\psi}\ .
     \label{complex-variable-set}
 \end{align}
 
 In order to obtain a set of classical equations which describe the motion of the system, a new pair of variables are introduced from the ones defined in Eq. \ref{complex-variable-set}. Indeed, defining the variables $(\varphi,r)$ and $(\psi,t)$ with $r$ and $t$ given by the relations:
-
 \begin{align}
     r=\frac{2I}{1+\rho^2}\ ,\ t=\frac{2j}{1+f^2}\ ,
 \end{align}
 
 where $r\in\left[0,2I\right]$ and $t\in\left[0,2j\right]$, will bring the classical equations of motion (provided by the TDVE), to a straightforward canonical form:
-
 \begin{align}
     \frac{\partial\mathcal{H}}{\partial r}&=\dot{\varphi}\ ;\ \frac{\partial\mathcal{H}}{\partial \varphi}=-\dot{r}\ , \nonumber\\
     \frac{\partial\mathcal{H}}{\partial t}&=\dot{\psi}\ ;\ \frac{\partial\mathcal{H}}{\partial \psi}=-\dot{t}\ .
@@ -365,7 +352,7 @@ It can be seen that the terms which enter in $B$ and $C$, namely $(\text{T}_B^1,
 
 Going back to Eq. \ref{dispersion-eq}, under the restrictions for the MOIs defined above, the dispersion equation admits two real and positive solutions (hereafter denoted with $\Omega_1^I$ and $\Omega_2^I$, where $\Omega_1^I<\Omega_2^I$) defined for $j_1=i_{13/2}$, given by:
 \begin{align}
-    \Omega_{1,2}^I=\sqrt{\frac{1}{2}\left(-B\mp(B^2-4C)^{1/2}\right)}
+    \Omega_{1,2}^I=\sqrt{\frac{1}{2}\left(-B\mp(B^2-4C)^{1/2}\right)}\ .
     \label{wobbling-frequencies}
 \end{align}
 
@@ -377,7 +364,6 @@ These two solutions are interpreted as \emph{wobbling frequencies} associated to
 It is worth noting that they take part in the energy states belonging to all the bands, including the yrast ones, however, in that case, the zero-point motion is considered (meaning that the two wobbling quanta $(\Omega_1^I,\Omega_2^I)$ are halved).
 
 Now that the energy function $\mathcal{H}$ was defined in terms of classical coordinates $\bar{q}_\text{core}$ and $\bar{q}_\text{s.p.}$, and the wobbling frequencies were obtained, it is possible to define the analytical expressions for the four TSD bands of $^{163}$Lu. Indeed, taking care of the coupling scheme for each band, they can be formulated as follows:
-
 \begin{align}
     E_\text{TSD1}^I&=\epsilon_j+\mathcal{H}_\text{min}^{(I,j)}+\mathcal{F}_{00}^I\ ,\ I=13/2,17/2,21/2\dots \nonumber \\
     E_\text{TSD2}^I&=\epsilon_j^1+\mathcal{H}_\text{min}^{(I,j)}+\mathcal{F}_{00}^I\ ,\ I=27/2,31/2,35/2\dots \nonumber \\
@@ -387,7 +373,7 @@ Now that the energy function $\mathcal{H}$ was defined in terms of classical coo
 \end{align}
 where $\mathcal{F}_{n_{w_1}n_{w_2}}^I$ is a function of the wobbling frequencies, defined accordingly to the wobbling phonon numbers $n_{w_1},n_{w_2}$:
 \begin{align}
-    \mathcal{F}_{n_{w_1}n_{w_2}}^I=\Omega_1^I\left(n_{w_1}+\frac{1}{2}\right)+\Omega_2^I\left(n_{w_2}+\frac{1}{2}\right)
+    \mathcal{F}_{n_{w_1}n_{w_2}}^I=\Omega_1^I\left(n_{w_1}+\frac{1}{2}\right)+\Omega_2^I\left(n_{w_2}+\frac{1}{2}\right)\ ,
 \end{align}
 and $\mathcal{H}_\text{min}^{(I,j)}$ is the classical energy evaluated in its minimal point $p_0$.
 
@@ -441,6 +427,51 @@ From Eqs. \ref{parity-action} and \ref{classical-energy-invariance}, it can be c
 \end{align}
 
 The above result concludes the parity analysis for the wave-function, showing that the triaxial rotor admits eigenfunctions (i.e., deformed rotational states) of negative parity. Therefore, a single wave-function characterized by the coupling of a triaxial core to the odd proton $i_{13/2}$ is describing both positive parity states ($\in TSD_{1,2,3}$) as well as negative parity states ($\in TSD_4$). This analysis, together with the fact that $TSD_2$ and $TSD_4$ have the same a.m. sequences (although $TSD_2$ has more states with low spin than $TSD_4$) suggest the fact that these two bands might be Parity Partners.
+
+\subsection{Energy function - geometrical interpretation}
+
+The analytical expression for the average of $H$ with the trial function describing the system was previously calculated in \texttt{W1}. Indeed, the energy function $\mathcal{H}$ was given in terms of the phase space coordinates as follows:
+\begin{align}
+    \mathcal{H}=&\frac{I}{2}(A_1+A_2)+A_3I^2+\frac{2I-1}{2I}r(2I-r)\mathcal{A}_\varphi+\frac{j}{2}(A_1+A_2)+A_3j^2+\frac{2j-1}{2j}t(2j-t)\mathcal{A}_\psi \nonumber\\
+    &-2\sqrt{r(2I-r)t(2j-t)}\mathcal{A}_{\varphi\psi}+A_3\left[r(2j-t)+t(2I-r)\right]-2A_3Ij+V\frac{2j-1}{j+1}\mathcal{A}_\gamma\ ,
+    \label{energy-function-analytical}
+\end{align}
+with:
+\begin{align}
+    &\mathcal{A}_\varphi=(A_1\cos^2\varphi+A_2\sin^2\varphi-A_3)\ , \nonumber\\
+    &\mathcal{A}_{\varphi\psi}=(A_1\cos\varphi\cos\psi+A_2\sin\varphi\sin\psi)\ ,\nonumber\\
+    &\mathcal{A}_\psi=(A_1\cos^2\psi+A_2\sin^2\psi-A_3)\ , \nonumber\\
+    &\mathcal{A}_\gamma=\left[cos\gamma-\frac{t(2j-t)}{2j^2}\sqrt{3}(\sqrt{3}\cos\gamma+\sin\gamma\cos2\psi)\right]
+\end{align}
+
+It is instructive to check the dependence of the energy function on the angular momentum components, e.g. the coordinates $x_k\overset{\mathrm{not.}}{=}I_k\ ,\ k=1,2,3$, where the quantization axis is chosen as the 3-axis. By expressing the angular momentum coordinates $x_{1,2,3}$ in terms of the polar angles $(\theta,\varphi)$ and a radius $r$ given by the value of the total angular momentum $I$, one obtains: 
+\begin{align}
+    x_1=I\sin\theta\cos\varphi\ ,\ x_2=I\sin\theta\sin\varpi\ ,\ x_3=I\cos\theta\ .
+\end{align}
+
+The total angular momentum $\vec{I}$ of the nucleus can be visualized as a vector within the angular momentum space, generated by its three components. Figure \ref{angular-momentum-3-axis} shows such a representation.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.75]{figs/3-axis_spherical_coordinates.pdf}
+    \caption{The angular momentum vector of the triaxial nucleus, represented in the angular momentum space. The polar angles $(\theta,\varphi)$ that the vector makes with the $x_3$ axis and $x_1x_2$-plane, respectively, are also shown.}
+    \label{angular-momentum-3-axis}
+\end{figure}
+
+Within this spherical coordinates, and evaluating the energy function around its minimum point $p_0$, the following expression for $\mathcal{H}$ arises:
+\begin{align}
+    \left. \mathcal{H}\ \right\vert_{p_0}=I\left(I-\frac{1}{2}\right)\sin^2\theta(A_1\cos^2\varphi+A_2\sin^2\varphi-A_3)-2A_1Ij\sin\theta+T_\text{core}+T_\text{s.p.}\ .
+\end{align}
+
+The last two terms in this equation are independent on the polar angles $(\theta,\varphi)$, and they characterize the minimal energy for a triaxial rotor with given spin $I$ and inertial parameters $A_{1,2,3}$ (i.e., $T_\text{core}$), and the minimal energy which arises from the coupling $j$ nucleon that is moving in the mean-field of strength $V$ and triaxial deformation $\gamma$ (i.e., $T_\text{s.p.}$). The two terms have the following form:
+\begin{align}
+    T_\text{core}&=\frac{I}{2}(A_1+A_2)+A_3I^2\ ,\nonumber \\
+    T_\text{s.p.}&=\frac{j}{2}(A_2+A_3)+A_1j^2-V\frac{2j-1}{j+1}\sin\left(\gamma+\frac{\pi}{6}\right)\ .
+\end{align}
+
+The classical equation of motion admits two constants of motion: the total system energy (E) and the total angular momentum (I). In fact, this is consistent with the quantum theory, where the angular momentum vector of a rotating system is conserved. A 3-dimensional rotation can be visualized in a semi-classical description as a precession of the total angular momentum vector around the rotational axis (that is the axis with largest MOI). Consequently, by finding the intersection line(s) between the surface of the energy ellipsoid $E$ and the surface of the angular momentum sphere generated by the spin $I$, then one can assert that a trajectory which belongs to a defined rotational state (with given spin and energy) is found. It is possible to construct a set with all the allowed trajectories for $^{163}$Lu if the energy ellipsoid $E$ for a given state $I\in TSD_k\ ,\ k=1,2,3,4$ is evaluated, then intersected with its corresponding angular momentum $I$. Such representations will be made in the following section. These trajectories will show aim to show a classical visualization of the wobbling character for a triaxial nucleus.
+
+\section{Numerical results}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
