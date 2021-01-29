@@ -1,8 +1,0 @@
-echo 'Cleaning the [dev] directory'
-rm *.aux
-rm *.blg
-rm *.fdb_latexmk
-rm *.fls
-rm *.log
-rm *.synctex.gz
-echo 'Finished cleaning the [dev] directory'
