@@ -1,2 +1,6 @@
-
 resources/.DS_Store
+*.fdb_latexmk
+*.aux
+*.fls
+*.log
+*.out
