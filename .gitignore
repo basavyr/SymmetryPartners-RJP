@@ -1,9 +1,8 @@
-resources/.DS_Store
+*.DS_Store
 *.fdb_latexmk
 *.aux
 *.fls
 *.log
 *.out
 *.DS_Store
-resources/Learning-Materials/.DS_Store
-resources/Learning-Materials/.DS_Store
+*.gz
