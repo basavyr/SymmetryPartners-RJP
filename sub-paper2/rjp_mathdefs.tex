@@ -1,0 +1,98 @@
+%This file contains a hopefully ever growing collection of command shortcuts and even new LaTeX commands (especially for math mode),
+%that are currently in use and accepted by Romanian Journal of Physics.
+% Last modified: 16/09/2016 (dd/mm/yyyy)
+%
+% Commands specifically designed for class documentation
+\ifrjpcl@ssdoc
+\newcommand{\miktex}{\hbox{Mik\kern-.15em\TeX}}
+\newcommand{\earXiv}{\texttt{ar\raisebox{-.25ex}{X}iv}}
+\newcommand{\texlive}{\hbox{\TeX Live}}
+\newcommand{\texcom}[1]{\texttt{\small\textbackslash #1}}
+%\newcommand{\rjpurl}[1]{\href{#1}{\texttt{\small #1}}}
+\fi
+% Environment and general command shortcuts
+\providecommand{\beq}[1][\@empty]{\def\@ttoken{#1}\begin{equation}\dbg@ut{\@ttoken}\ifx\@empty#1 \else\label{#1}\fi}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\beqn}{\begin{equation*}}
+\newcommand{\eeqn}{\end{equation*}}
+%
+% Various other operators
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Img}{Im}
+\DeclareMathOperator{\Rel}{Re}
+\DeclareMathOperator{\ee}{e}
+%
+% Elliptic Jacobi functions - obsolete, do not use! (see below)
+\DeclareMathOperator{\sn}{sn}
+\DeclareMathOperator{\cn}{cn}
+\DeclareMathOperator{\dn}{dn}
+%
+% Mathematical operators and various symbols
+\DeclareMathOperator{\ddiv}{div}
+\DeclareMathOperator{\grad}{grad}
+% Replaceable by \tanh^{-1}
+% Hyperbolic functions
+\DeclareMathOperator{\artanh}{artanh}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\cosech}{csch}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\cosec}{cosec}
+\newcommand{\eps}{\ensuremath{\varepsilon}}
+\newcommand{\cc}{\ifmmode\mathrm{cc.\;}\else\textrm{cc.~}\fi}
+\newcommand{\ict}{\ifmmode\mathcal{C}\else\texttt{C}\fi}
+% Partial derivative
+\providecommand{\pd}{\ensuremath{\partial}}
+% To be eliminated in future versions!
+\providecommand{\dd}{\ensuremath{\mathrm{d}}}
+\providecommand{\id}{\ensuremath{\;\mathrm{d}}}
+% Full derivative
+\providecommand{\fd}{\ensuremath{\mathrm{d}}}
+% Bras and Kets
+\providecommand{\bra}[1]{\ensuremath{\left<#1\right|}}
+\providecommand{\ket}[1]{\ensuremath{\left|#1\right>}}
+% the \braket command is thought to be the matrix element of operator #1 for state #2 (left) and state #3 (right)
+\providecommand{\braket}[3]{\ensuremath{\left<#2|#1|#3\right>}}
+%
+% Commands for multiple indexes around a central token #1
+% The names derive from "front up-down, back up-down" of #1 (it better be read as "left up-down, right up-down") indicating 
+% the order in which indexes are passed starting with #2 (left-up or front-up). The only cool stuff about these commands is 
+% that it reduces the space between up-down left indexes and the following token.
+\newcommand{\fudbud}[5]{{\!\;}^{#2}_{#3}\!\!#1^{#4}_{#5}}
+\newcommand{\fubu}[3]{{\!\;}^{#2}\!\!#1^{#3}}
+\newcommand{\fdbd}[3]{{\!\;}_{#2}\!\!#1_{#3}}
+\newcommand{\fdbu}[3]{{\!\;}_{#2}\!#1^{#3}}
+\newcommand{\fubd}[3]{{\!\;}^{#2}\!#1_{#3}}
+%
+% put a small hat on operators!
+\providecommand{\hatop}[1]{\ensuremath{\hat{\mathop{\operator@font #1}\nolimits}}}
+%
+% A small macro for generating uppercased letters of specific math font (mathfrak).
+\let\op@format\mathfrak
+% \let\op@format\mathcal
+\def\op#1{%
+ \ifnum`#1=\lccode`#1
+  \expandafter\ensuremath\op@format{\uppercase{#1}}
+ \else%
+  \expandafter\ensuremath\op@format{#1}
+ \fi%
+}%
+% Jacobi elliptic functions as operators
+\DeclareMathOperator{\jsn}{sn} % to replace duplicates above!
+\DeclareMathOperator{\jcn}{cn}
+\DeclareMathOperator{\jdn}{dn}
+\DeclareMathOperator{\jns}{ns} % 1/sn(u)
+\DeclareMathOperator{\jnc}{nc} % 1/cn(u)
+\DeclareMathOperator{\jnd}{nd} % 1/dn(u)
+\DeclareMathOperator{\jsc}{sc} % sn(u)/cn(u)
+\DeclareMathOperator{\jsd}{sd} % sn(u)/dn(u)
+\DeclareMathOperator{\jdc}{dc} % dn(u)/cn(u)
+\DeclareMathOperator{\jds}{ds} % dn(u)/sn(u)
+\DeclareMathOperator{\jcs}{cs} % cn(u)/sn(u) 
+\DeclareMathOperator{\jcd}{cd} % cn(u)/dn(u)
+
+% Pre-formatted special text chunks
+\providecommand{\ie}{\textit{i.e.}}
+\providecommand{\eg}{\textit{e.g.}}
+\providecommand{\etal}{\textit{et al.}}
+
+
