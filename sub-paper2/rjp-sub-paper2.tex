@@ -64,15 +64,16 @@ moretexcs={authnote,keywords,pacs},
 \textbf{To be implemented...}
 \end{abstract}
 
-\section{Introduction compatibility}
+\section{Introduction}
 
-\textbf{To be implemented...}
+Collective phenomena in nuclei, such as the \emph{wobbling motion} has been drawing a lot of attention lately, mainly due to its elusive character. Considered as a clear fingerprint of nuclear triaxiality, wobbling motion (w.m.) has been predicted theoretically by Bohr and Mottelson more than 40 years ago \cite{bohr1998nuclear}, when they were discussing the excited spectra of even-even nuclei using a triaxial rigid rotor with three different moments of inertia. 
+
+W.m. can be viewed as the quantum analogue for the motion of the asymmetric top, whose rotation around the axis with the largest MOI is energetically the most favored. A uniform rotation about this axis will have the lowest energy for a given angular momentum (spin). As the energy increases, this axis will start to precess with a harmonic type of oscillation about the space-fixed angular momentum vector, giving rise to a family of wobbling bands, each characterized by a wobbling phonon number $n_w$. The resulting quantal spectrum will be a sequence of $\Delta I=2\hbar$ rotational bands, with an alternating signature number ($\alpha=\pm\frac{1}{2}$ for odd-A nuclei) for each wobbling excitation.
+
+Although Bohr and Mottelson made predictions of these excitations for the even-nuclei, the first experimental evidence of this nuclear behavior has been identified in an odd-mass nucleus: $^{163}$Lu.
 
 \section{Wobbling motion in nuclei} \label{section2-wm}
 
-W.M. can be viewed as the quantum analogue for the motion of the asymmetric top, whose rotation around the axis with the largest MOI is energetically the most favored. A uniform rotation about this axis will have the lowest energy for a given angular momentum (spin). As the energy increases, this axis will start to precess with a harmonic type of oscillation about the space-fixed angular momentum vector, giving rise to a family of wobbling bands, each characterized by a wobbling phonon number $n_w$. The resulting quantal spectrum will be a sequence of rotational $\Delta I=2$ bands, with an alternating signature number for each wobbling excitation.
-
-As previously mentioned, for a given angular momentum, uniform rotation around the axis with the largest MOI corresponds to minimum energy. For a triaxial rotor emerging from a Liquid Drop, this is equivalent to rotation around the $m$ axis. Therefore, Frauendorf \cite{frauendorf2014transverse} classified the LW as the situation when the odd nucleon will align its angular momentum along the $m$-axis, while TW being the situation where $j$ is aligned perpendicular to the $m$-axis (with $s$- or $l$-axis alignment depending on the $j$-shell orbital from which the odd nucleon arises). It is worthwhile to mention the fact that the analysis done in Ref. \cite{frauendorf2014transverse} was performed within a so-called \emph{Frozen Alignment} approximation, where the angular momentum of the odd particle $\vec{j}$ is rigidly aligned with one of the three principal axes of the triaxial ellipsoid (that is $s$-, $l$- or $m$-axis).
 
 For a better understanding of the wobbling regimes in terms of angular momentum alignment, Figure \ref{wobbling-coupling-scheme} depicts three particular cases, namely a simple wobbler - inset A.0 (the case firstly developed by Bohr and Mottelson \cite{bohr1998nuclear}), a longitudinal wobbler - inset A.1, and a transverse wobbler - inset A.2.
 
@@ -205,27 +206,36 @@ It is instructive to check the dependence of the energy function on the angular 
     \label{coordinate-parametrization}
 \end{align}
 
-Within this spherical coordinates, and evaluating the energy function around its minimum point $p_0=(0,I;0,j)$, the following expression for $\mathcal{H}$ results:
+Using this coordinates system and evaluating the energy function around its minimum point $p_0=(0,I;0,j)$, the following expression for $\mathcal{H}$ will be obtained:
 \begin{align}
-    \left. \mathcal{H}\ \right\vert_{p_0}=I\left(I-\frac{1}{2}\right)\sin^2\theta(A_1\cos^2\varphi+A_2\sin^2\varphi-A_3)-2A_1Ij\sin\theta+T_\text{core}+T_\text{s.p.}\ .
+    %\left. \mathcal{H}\ \right\vert_{p_0}=I\left(I-\frac{1}{2}\right)\sin^2\theta(A_1\cos^2\varphi+A_2\sin^2\varphi-A_3)-2A_1Ij\sin\theta+T_\text{core}+T_\text{s.p.}\ .
+    \left. \mathcal{H}\ \right\vert_{p_0}=I\left(I-\frac{1}{2}\right)\sin^2\theta\cdot\mathcal{A}_\varphi(\varphi)-2A_1Ij\sin\theta+T_\text{core}+T_\text{s.p.}\ .
     \label{energy-function-minimal}
 \end{align}
 
-The last two terms in this equation are independent on the polar angles $(\theta,\varphi)$, and  have the form:
+The last two terms in this equation are independent on the polar angles $(\theta,\varphi)$ and they have the following form:
 \begin{align}
     T_\text{core}&=\frac{I}{2}(A_1+A_2)+A_3I^2\ ,\nonumber \\
     T_\text{s.p.}&=\frac{j}{2}(A_2+A_3)+A_1j^2-V\frac{2j-1}{j+1}\sin\left(\gamma+\frac{\pi}{6}\right)\ .
     \label{energyfunction-core-single-particle-subterms}
 \end{align}
 
-The classical equations of motion admit two constants of motion: the total energy (E) and the total angular momentum (I).  Consequently, by finding the intersection line(s) between the surface of the energy ellipsoid $E$ and the surface of the angular momentum, a sphere of radius  $I$, one finds the system trajectory.  Such representations will be made in the following section.
+The classical equations of motion admit two constants of motion: the total energy (E) and the total angular momentum (I).  Consequently, by finding the intersection line(s) between the energy surface $E$ and the surface of the angular momentum (i.e., a sphere of radius $r=I$), the system's trajectory at that particular energy and spin is obtained. Such representations will be made in the following section.
 
-The expression of the energy ellipsoid in Cartesian coordinates is:
+By changing Eq. \ref{energy-function-minimal} from polar coordinates into Cartesian coordinates, the energy surface $E$ will become:
 \begin{align}
     E=&\left(1-\frac{1}{2I}\right)A_1x_1^2+\left(1-\frac{1}{2I}\right)A_2x_2^2+\left[\left(1-\frac{1}{2I}\right)A_3+A_1\frac{j}{I}\right]x_3^2-\nonumber\\
     &-I\left(I-\frac{1}{2}\right)A_3-2A_1Ij+T_\text{rot}+T_\text{sp}\ .
     \label{energy-ellipsoid-cartesian}
 \end{align}
+
+Indeed, one can notice that the three coordinates $x_k$ appear as a squared sum. If some notations for the terms appearing next to the coordinates and the free ones are made, one arrives at the following expression for the energy surface:
+\begin{align}
+    E=\mathcal{S}_1x_1^2+\mathcal{S}_2x_2^2+\mathcal{S}_3x_3^2+C_0^\text{rot+sp}\ .
+    \label{energy-surface-short-expr}
+\end{align}
+
+From Eq. \ref{energy-surface-short-expr}, it is now clear that the energy surface will be an ellipsoid, while the free-term $\mathcal{C}_0^\text{rot+sp}$ will produce an overall shift of the entire surface. The shift is in fact caused by the core+particle coupling.
 
  For a total angular momentum $\vec{I}$, the vector generates a sphere of radius $r=I$ described by the equation:
 \begin{align}
@@ -256,7 +266,7 @@ $\mathcal{I}_1$ [$\hbar^2$/\text{MeV}] & $\mathcal{I}_2$ [$\hbar^2$/\text{MeV}]&
 
 \subsection{Stability of the wobbling region}\label{wobbling-stability}
 
-The expression for the classical energy function, which plays a crucial role in analyzing the nucleus's stability for a given rotational state, was presented in the previous section, through Eq. \ref{energy-function-minimal}. This will be used within the present numerical calculations to pinpoint the regions in space where the minimal points of $\mathcal{H}$ exist. A special interest is devoted to the low-lying states from each of the four bands. Namely, for each band, a spin-state close to the band-head is chosen, then using the parameter set $\mathcal{P}$, a graphical representation in the $(\theta,\varphi)$-coordinate space is realized, and in each case, the extremal points with minimum character are identified. These graphical representations are shown in Figures \ref{contours-12} and \ref{contours-34}.
+The expression for the classical energy function, which plays a crucial role in analyzing the nucleus's stability for a given rotational state, was presented in the previous section, through Eq. \ref{energy-function-minimal}. This will be used within the present numerical calculations to pinpoint the regions in space where the minimal points of $\mathcal{H}$ do exist. A special interest is devoted to the low-lying states from each of the four bands. Namely, for each band, a spin-state close to the band-head is chosen, then using the parameter set $\mathcal{P}$, a graphical representation in the $(\theta,\varphi)$-coordinate space is realized, and in each case, the extremal points with minimum character are identified. These graphical representations are shown in Figures \ref{contours-12} and \ref{contours-34}.
 
 \begin{figure}
 \centering
@@ -288,7 +298,7 @@ The four contour plots shown in Figures \ref{contours-12} and \ref{contours-34} 
     \label{contours-34}
 \end{figure}
 
-Regarding the minimum points (marked by red dots on the contour plots), their position remains unchanged for all four bands and any rotational state $I$, as long as the MOI order stays the same. Remarkable is the fact that only with the obtained set of parameters (the current MOI ordering) it was possible to define contours with stable motion (marked by the darker regions). Indeed, if the two ratios $\mathcal{I}_1/\mathcal{I}_2$ and $\mathcal{I}_2/\mathcal{I}_3$ would have been smaller, a larger unstable region would prevail (with islands of maximal character), constraining thus the stable wobbling motion. This could indicate the fact that the single-particle term $T_\text{s.p.}$ from $\mathcal{H}$ is sensitive to larger triaxiality, and only for certain values will the system achieve a stable motion characterized by large deformation (see Eq. \ref{energyfunction-core-single-particle-subterms}).
+Regarding the minimum points (marked by red dots on the contour plots), their position remains unchanged for all four bands and any rotational state $I$, as long as the MOI order stays the same. Remarkable is the fact that only with the obtained set of parameters (i.e., the current MOI ordering) it was possible to define contours with stable motion (marked by the darker regions). Indeed, if the two ratios $\mathcal{I}_1/\mathcal{I}_2$ and $\mathcal{I}_2/\mathcal{I}_3$ would have been smaller, a larger unstable region would prevail (with islands of maximal character), constraining thus the stable wobbling motion. This could indicate the fact that the single-particle term $T_\text{s.p.}$ from $\mathcal{H}$ is sensitive to larger triaxiality, and only for certain values will the system achieve a stable motion characterized by large deformation (see Eq. \ref{energyfunction-core-single-particle-subterms}).
 
 An additional step consists in the analysis of the energy function, more precisely to see its evolution in one of the minimum points with respect to the angular momentum $I$. As it was already observed from the contour plots shown in Figures \ref{contours-12}-\ref{contours-34}, the depth of the minima differs from one spin state to another, so it would be useful to have a quantitative view on that change. By fixing $\mathcal{H}$ in one of its critical points (e.g., the minimum $p_\text{min}(\theta,\varphi)=(\frac{\pi}{2},0)$), the angular momentum $I$ was varied within a large interval, and the evolution of $\mathcal{H}$ was evaluated. Graphical representation is shown in Figure \ref{energy-function-minimum-evolution}.
 
