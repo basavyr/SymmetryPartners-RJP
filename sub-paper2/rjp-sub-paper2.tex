@@ -158,11 +158,11 @@ with:
     \label{special-terms-energy-function}
 \end{align}
 
-For the condition $A_1>A_2>A_3$, the expression from Eq. \ref{energy-function-analytical} is minimal in the point $p_0|_\text{min}=(0,I;0,j)$, since $p_0$ is a critical point of $\mathcal{H}$. The same critical point was used within \textbf{I} in order to obtain the expression of $\mathcal{H}_\text{min}^{(I,j)}$ which entered in the expressions of the excitation energies for $^{163}$Lu (See Eqs. 7-9 from \textbf{I}). Therein, it was possible to parametrize the total energy of the system in terms of the three MOIs, the triaxiality parameter $\gamma$, and the single-particle potential strength $V$, having them as free parameters (denoted as $\mathcal{P}$ in \textbf{I}). In fact, looking back at Eqs. \ref{energy-function-analytical} and \ref{special-terms-energy-function} written above, the same parameters are present here. Since the inertial parameters $A_k$ are $A_k=\frac{1}{2\mathcal{I}_k}\ ,\ k=1,2,3$, it follows that:
+For the condition $A_1>A_2>A_3$, the expression from Eq. \ref{energy-function-analytical} is minimal in the point $p_0|_\text{min}=(0,I;0,j)$, since $p_0$ is a critical point of $\mathcal{H}$. The same critical point was used within \textbf{I} in order to obtain the expression of $\mathcal{H}_\text{min}^{(I,j)}$ which entered in the expressions of the excitation energies for $^{163}$Lu (See Eqs. 7-9 from \textbf{I}). Therein, it was possible to parametrize the total energy of the system in terms of the three MOIs, the triaxiality parameter $\gamma$, and the single-particle potential strength $V$, having them as free parameters (denoted as $\mathcal{P}$ in \textbf{I}). In fact, looking back at Eqs. \ref{energy-function-analytical} and \ref{special-terms-energy-function} written above, the same parameters are also present here. Since the inertial parameters $A_k$ are $A_k=\frac{1}{2\mathcal{I}_k}\ ,\ k=1,2,3$, it follows that:
 \begin{align}
     \mathcal{H}=\texttt{fct}(\mathcal{I}_1,\mathcal{I}_3,\mathcal{I}_3,\gamma,V)\ .
 \end{align}
-This will help for the numerical application of the current research since one can just adopt the numerical values for $\mathcal{P}\equiv\left[\mathcal{I}_{1,2,3},\gamma,V\right]$ obtained via the fitting procedure made for the excitation energies in \textbf{I}. One can see that indeed, the classical energy function plays a crucial role in both determining the wobbling energies of the isotope, but also (as it will be shown) studying its behavior concerning the geometry of the system. 
+This will help for the numerical application of the current research since one can just adopt the numerical values for $\mathcal{P}\equiv\left[\mathcal{I}_{1,2,3},\gamma,V\right]$ obtained via the fitting procedure made for the excitation energies in \textbf{I}. Indeed, the classical energy function plays a crucial role in both determining the wobbling energies of the isotope, but also (as it will be shown) studying its behavior concerning the geometry of the system. 
 
 Furthermore, it is instructive to check the dependence of the energy function on the angular momentum components, e.g., the coordinates $x_k\overset{\mathrm{not.}}{=}I_k\ ,\ k=1,2,3$, where the quantization axis is chosen as the 3-axis. By expressing the angular momentum coordinates $x_{1,2,3}$ in terms of the polar angles $(\theta,\varphi)$ and a radius $I$, one obtains: 
 \begin{align}
@@ -173,7 +173,7 @@ Furthermore, it is instructive to check the dependence of the energy function on
 Using this coordinates system and evaluating the energy function around its minimum point $p_0=(0,I;0,j)$, the following expression for $\mathcal{H}$ will be obtained:
 \begin{align}
     %\left. \mathcal{H}\ \right\vert_{p_0}=I\left(I-\frac{1}{2}\right)\sin^2\theta(A_1\cos^2\varphi+A_2\sin^2\varphi-A_3)-2A_1Ij\sin\theta+T_\text{core}+T_\text{s.p.}\ .
-    \left. \mathcal{H}\ \right\vert_{p_0}=I\left(I-\frac{1}{2}\right)\sin^2\theta\cdot\mathcal{A}_\varphi(\varphi)-2A_1Ij\sin\theta+T_\text{core}+T_\text{s.p.}\ .
+    \left. \mathcal{H}\ \right\vert_{p_0}=\mathcal{H}(\theta,\varphi)=I\left(I-\frac{1}{2}\right)\sin^2\theta\cdot\mathcal{A}_\varphi(\varphi)-2A_1Ij\sin\theta+T_\text{core}+T_\text{s.p.}\ .
     \label{energy-function-minimal}
 \end{align}
 
@@ -184,25 +184,25 @@ The last two terms in this equation are independent on the polar angles $(\theta
     \label{energyfunction-core-single-particle-subterms}
 \end{align}
 
-A quantitative analysis on these two quantities is useful in order to see how a different $A_k$ ordering would affect $T_\text{core}$, and also how is the single-particle angular momentum influence $T_\text{s.p.}$. Results are both quantities are graphically represented in Fig. \ref{sub_terms}.
+A quantitative analysis on these two quantities is useful in order to see how a different $A_k$ ordering would affect $T_\text{core}$, and also how is the single-particle angular momentum influence $T_\text{s.p.}$. Results for both quantities are graphically represented in Fig. \ref{sub_terms}.
 
 \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[scale=0.46]{figs/T_Core.pdf}
+  \includegraphics[scale=0.48]{figs/T_Core.pdf}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
- \includegraphics[scale=0.46]{figs/T_SingleParticle.pdf}
+ \includegraphics[scale=0.48]{figs/T_SingleParticle.pdf}
 \end{minipage}
-\caption{\textbf{Left:} The free term from Eq. \ref{energy-function-minimal} which corresponds to the core, for different orderings of the MOIs. For the ordering $A_1>A_2>A_3$, the parameters from Table \ref{parameter_set} were taken.\textbf{Right:} The free term from Eq. \ref{energy-function-minimal} which corresponds to the single-particle. The evaluation of $T_\text{s.p.}$ was made for the parameters listed in Table \ref{parameter_set}.}
+\caption{\textbf{Left:} The free term from Eq. \ref{energy-function-minimal} which corresponds to the core, for different orderings of the MOIs. For the ordering $A_1>A_2>A_3$, the parameters from Table \ref{parameter_set} were taken. \textbf{Right:} The free term from Eq. \ref{energy-function-minimal} which corresponds to the single-particle. The evaluation of $T_\text{s.p.}$ was made for the parameters listed in Table \ref{parameter_set}.}
     \label{sub_terms}
 \end{figure}
 
-The classical equations of motion admit two constants of motion: the total energy (E) and the total angular momentum (I).  Consequently, by finding the intersection line(s) between the energy surface $E$ and the surface of the angular momentum (i.e., a sphere of radius $r=I$), the system's trajectory at that particular energy and spin is obtained. Such representations will be made in the following section.
+The classical equations of motion admit two constants of motion: the total energy (E) and the total angular momentum (I).  Consequently, by finding the intersection line(s) between the energy surface $E$ and the surface of the angular momentum, the system's trajectory at that particular energy and spin is obtained. Such representations will be made in the following section.
 
-By changing Eq. \ref{energy-function-minimal} from polar coordinates into Cartesian coordinates, the energy surface $E$ will become:
+By changing the form of Eq. \ref{energy-function-minimal} from polar coordinates into Cartesian coordinates, the energy surface $E$ will become:
 \begin{align}
     E=&\left(1-\frac{1}{2I}\right)A_1x_1^2+\left(1-\frac{1}{2I}\right)A_2x_2^2+\left[\left(1-\frac{1}{2I}\right)A_3+A_1\frac{j}{I}\right]x_3^2-\nonumber\\
     &-I\left(I-\frac{1}{2}\right)A_3-2A_1Ij+T_\text{rot}+T_\text{sp}\ .
@@ -215,20 +215,20 @@ Indeed, one can notice that the three coordinates $x_k$ appear as a squared sum.
     \label{energy-surface-short-expr}
 \end{align}
 
-From Eq. \ref{energy-surface-short-expr}, it is now clear that the energy surface will be an ellipsoid, while the free-term $\mathcal{C}_0^\text{rot+sp}$ will produce an overall shift of the entire surface. The shift is caused by the core+particle coupling.
+From Eq. \ref{energy-surface-short-expr}, it is now clear that the energy surface will be an ellipsoid, while the free-term $\mathcal{C}_0^\text{rot+sp}$ will produce an overall shift of the entire surface. The shift is caused by the core+particle coupling, and its magnitude is strictly dependent on the parameter set $\mathcal{P}$. It is remarkable the fact that the quality of the fitting results from \textbf{I} is reflected in the present work, via the classical geometric interpretation of the triaxial particle-core ellipsoid, through $\mathcal{P}$.
 
- For a total angular momentum $\vec{I}$, the vector generates a sphere of radius $r=I$ described by the equation:
+Furthermore, for a total angular momentum $\vec{I}$, the vector generates a sphere of radius $r=I$ described by the equation:
 \begin{align}
     I^2=x_1^2+x_2^2+x_3^2\ .
     \label{angular-momentum-sphere}
 \end{align}
 
-The trajectories obtained through the intersection of Eqs. \ref{energy-surface-short-expr} and \ref{angular-momentum-sphere} will show a classical visualization of the wobbling character for a triaxial nucleus.
+The trajectories obtained through the intersection of Eqs. \ref{energy-surface-short-expr} (the shifted ellipsoid $E$) and \ref{angular-momentum-sphere} (i.e., a sphere of radius $r=I$) will show a classical visualization of the wobbling character for a triaxial nucleus, and the possible trajectories of the system concerning its motion inside the angular momentum space.
 
 \section{Numerical results}
 \label{section-results}
 
-As already mentioned in the previous section, for the numerical part of this research, the parameters obtained from the fitting procedure made in \textbf{I} will be adopted for consistency of the \texttt{W2} approach. Their values are represented in Table \ref{parameter_set}. It is worth noting that for the case of \texttt{W1}, the geometrical interpretation of the classical energy function would have required two such sets of parameters, and therefore, two sets of calculations.
+As already mentioned in the previous section, for the numerical part of this research, the parameters obtained from the fitting procedure made in \textbf{I} will be adopted for consistency of the \texttt{W2} approach. Their values are represented in Table \ref{parameter_set} and the set is denoted by $\mathcal{P}$. It is worth noting that for the case of \texttt{W1}, the geometrical interpretation of the classical energy function would have required two such sets of parameters, and therefore, two sets of calculations (one for the bands $TSD_{1,2,3}$ and one for $TSD_4$).
 
 \begin{table}[ht]
 \caption{The parameter set $\mathcal{P}$ that was determined by a fitting procedure of the excitation energies for $^{163}$Lu, provided via calculations from \textbf{I}.}
@@ -246,17 +246,17 @@ $\mathcal{I}_1$ [$\hbar^2$/\text{MeV}] & $\mathcal{I}_2$ [$\hbar^2$/\text{MeV}]&
 
 \subsection{Stability of the wobbling region}\label{wobbling-stability}
 
-The expression for the classical energy function, which plays a crucial role in analyzing the nucleus's stability for a given rotational state, was presented in the previous section, through Eq. \ref{energy-function-minimal}. This will be used within the present numerical calculations to pinpoint the regions in space where the minimal points of $\mathcal{H}$ do exist. A special interest is devoted to the low-lying states from each of the four bands. Namely, for each band, a spin-state close to the band-head is chosen, then using the parameter set $\mathcal{P}$, a graphical representation in the $(\theta,\varphi)$-coordinate space is realized, and in each case, the extremal points with minimum character are identified. These graphical representations are shown in Figures \ref{contours-12} and \ref{contours-34}.
+The expression for the classical energy function, which plays a crucial role in analyzing the nucleus's stability for a given rotational state, was presented in the previous section, through Eq. \ref{energy-function-minimal}. This will be used within the present numerical calculations to pinpoint the regions in space where the minimal points of $\mathcal{H}(\theta,\varphi)$ do exist. A special interest is devoted to the low-lying states from each of the four bands. Namely, for each band, a spin-state close to the band-head is chosen, then using the parameter set $\mathcal{P}$, a graphical representation in the $(\theta,\varphi)$-coordinate space is realized, and in each case, the extremal points with minimum character are identified. These graphical representations are shown in Figures \ref{contours-12} and \ref{contours-34}.
 
 \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[scale=0.2]{figs/contour-tsd1.pdf}
+  \includegraphics[scale=0.35]{figs/contour-tsd1.pdf}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
- \includegraphics[scale=0.2]{figs/contour-tsd2.pdf}
+ \includegraphics[scale=0.35]{figs/contour-tsd2.pdf}
 \end{minipage}
 \caption{Contour plots with the energy function $\mathcal{H}$ given by Eq. \ref{energy-function-minimal} for a state in $TSD_1$ (left) and a state from $TSD_2$ (right). Calculations were performed with the numerical parameters given in Table \ref{parameter_set}. The minimum points for $\mathcal{H}$ are marked by red dots, and they represent the regions in space where the nucleus has a stable wobbling character. The darker \emph{islands} also indicate a stable motion of the triaxial nucleus.}
     \label{contours-12}
@@ -268,17 +268,19 @@ The four contour plots shown in Figures \ref{contours-12} and \ref{contours-34} 
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[scale=0.2]{figs/contour-tsd3.pdf}
+  \includegraphics[scale=0.35]{figs/contour-tsd3.pdf}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
- \includegraphics[scale=0.2]{figs/contour-tsd4.pdf}
+ \includegraphics[scale=0.35]{figs/contour-tsd4.pdf}
 \end{minipage}
 \caption{Contour plots with the energy function $\mathcal{H}$ given by Eq. \ref{energy-function-minimal} for a state in $TSD_3$ (left) and a state from $TSD_4$ (right). Calculations were performed with the numerical parameters given in Table \ref{parameter_set}. The minimum points for $\mathcal{H}$ are marked by red dots, and they represent the regions in space where the nucleus has a stable wobbling character. The darker \emph{islands} also indicate a stable motion of the triaxial nucleus.}
     \label{contours-34}
 \end{figure}
 
-Regarding the minimum points (marked by red dots on the contour plots), their position remains unchanged for all four bands and any rotational state $I$, as long as the MOI order stays the same. Remarkable is the fact that only with the obtained set of parameters (i.e., the current MOI ordering) it was possible to define contours with stable motion (marked by the darker regions). Indeed, if the two ratios $\mathcal{I}_1/\mathcal{I}_2$ and $\mathcal{I}_2/\mathcal{I}_3$ would have been smaller, a larger unstable region would prevail (with islands of maximal character), constraining thus the stable wobbling motion. This could indicate the fact that the single-particle term $T_\text{s.p.}$ from $\mathcal{H}$ is sensitive to larger triaxiality, and only for certain values will the system achieve a stable motion characterized by large deformation (see Eq. \ref{energyfunction-core-single-particle-subterms}).
+Regarding the minimum points (marked by red dots on the contour plots), their position remains unchanged for all four bands and any rotational state $I$, as long as the MOI order stays the same. Remarkable is the fact that only with the obtained set of parameters (i.e., the current MOI ordering) it was possible to define contours with stable motion (marked by the darker regions). Indeed, if the two ratios $\mathcal{I}_1/\mathcal{I}_2$ and $\mathcal{I}_2/\mathcal{I}_3$ would have been smaller, a larger unstable region would prevail (with islands of maximal character), constraining thus the stable wobbling motion. This could indicate the fact that the single-particle term $T_\text{s.p.}$ from the expression of $\mathcal{H}$ is sensitive to larger triaxiality, and only for certain values will the system achieve a stable motion characterized by large deformation (see Eq. \ref{energyfunction-core-single-particle-subterms}). In fact, Fig. \ref{sub_terms} shows the change in magnitude of $T_\text{s.p.}$ concerning the triaxiality parameter $\gamma$.
+
+
 
 An additional step consists in the analysis of the energy function, more precisely to see its evolution in one of the minimum points with respect to the angular momentum $I$. As it was already observed from the contour plots shown in Figures \ref{contours-12}-\ref{contours-34}, the depth of the minima differs from one spin state to another, so it would be useful to have a quantitative view on that change. By fixing $\mathcal{H}$ in one of its critical points (e.g., the minimum $p_\text{min}(\theta,\varphi)=(\frac{\pi}{2},0)$), the angular momentum $I$ was varied within a large interval, and the evolution of $\mathcal{H}$ was evaluated. Graphical representation is shown in Figure \ref{energy-function-minimum-evolution}.
 
@@ -370,7 +372,6 @@ The two models described throughout the paper, namely the formalisms $\texttt{W1
     \caption{A schematic representation with the three coupling schemes that characterize the \texttt{W2} model. The same odd particle ($j_1=i_{13/2}$ proton) is coupled with two positive cores with even (odd) integer spin sequences for $TSD_1$ ($TSD_2$), and one negative core in the case of $TSD_4$ with odd integer spin sequence. The total spin of the system precesses around the axis with the largest MOI, as it is the case for a triaxial rotor.}
     \label{three-couplings}
 \end{figure}
-
 \begin{thebibliography}{99}
 
 \bibitem{moller2006global}
