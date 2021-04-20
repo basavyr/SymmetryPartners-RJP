@@ -41,6 +41,7 @@ PARAMS_FIT = {
     "gm": 22
 }
 
+
 PARAMS_2 = {
     "A1": A_k(7),
     "A2": A_k(72),
@@ -48,6 +49,8 @@ PARAMS_2 = {
     "V": 2.1,
     "gm": 22
 }
+
+
 PARAMS_3 = {
     "A1": A_k(7),
     "A2": A_k(15),
@@ -68,7 +71,7 @@ core_terms_1 = [T_Core(PARAMS_FIT, I) for I in spins]
 core_terms_2 = [T_Core(PARAMS_2, I) for I in spins]
 core_terms_3 = [T_Core(PARAMS_3, I) for I in spins]
 
-plt.figure(figsize=(5,4))
+plt.figure(figsize=(5, 4))
 
 plt.plot(spins, core_terms_1, '-b', label=r'$A_1>A_2>A_3$')
 plt.plot(spins, core_terms_2, '-m', label=r'$A_2>A_3>A_1$')
