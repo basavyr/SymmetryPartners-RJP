@@ -74,13 +74,6 @@ Although Bohr and Mottelson made predictions for these excitations in even-even 
 Compared to the wobbling mode described in \cite{bohr1998nuclear}, which has a purely collective form, in the case of odd-A nuclei, it turns out that the wobbling mode appears due to the coupling of a valence nucleon (the so-called $\pi(i_{13/2})$ intruder) to a triaxial core, driving the nucleus up to large deformation ($\epsilon\approx0.4$) \cite{schnack1995superdeformed} and giving rise to excited states of the deformed nuclear system, each belonging to a particular wobbling band.
 
 Frauendorf et al. \cite{frauendorf2014transverse} showed that in the case of odd-$A$ nuclei, depending on the coupling between the triaxial core (with a.m. $\vec{R}$) and the single-particle ("valence" nucleon with a.m. $\vec{j}$), there can be two wobbling regimes: transverse (TW) and longitudinal (LW). The triaxial core is viewed as a Liquid Drop, such that that the main rotation is along the intermediate $m$-axis (since this one has the largest MOI). When the odd particle aligns its angular momentum along the $m$-axis, then the system is said to achieve a \emph{longitudinal wobbling} character (LW). If the odd-particle aligns its a.m. with an axis that is perpendicular to the $m$-axis (i.e., either the long $l$- or short $s$-axis of the triaxial rotor), then the system achieves a so-called \emph{transverse wobbling} character. For a better understanding of the wobbling regimes in terms of angular momentum alignment, Figure \ref{wobbling-coupling-scheme} depicts three particular cases, namely a simple wobbler - inset A.0 (the case firstly developed by Bohr and Mottelson \cite{bohr1998nuclear}), a longitudinal wobbler - inset A.1, and a transverse wobbler - inset A.2.
-
-The current work represents the second piece of a two-part series of papers that focuses on the description of the wobbling properties in odd-mass nuclei. Starting from an existing formalism concerning the interpretation of the wobbling structure of $^{163}$Lu \cite{raduta2020approach,raduta2020towards}, that initial framework (which will be further denoted by \texttt{W1}) is extended with a proper description of the states with positive and negative parity, by adopting the concept of \emph{Parity Partner Bands}. In the newly developed approach (denoted hereafter by \texttt{W2}), a single particle (the odd $i_{j=13/2}$ proton) couples to the triaxial core, generating a sequence of four triaxial strongly deformed bands (called $TSD_1$, $TSD_2$, $TSD_3$ and $TSD_4$), with a total of 63 rotational states in all the bands. Previously in \texttt{W1}, two different particle-core couplings were considered: one that consisted in the $i_{j=13/2}$ proton+core for the bands $TSD_{1,2,3}$ and one $h_{j=9/2}$ proton+core for $TSD_4$ band, which resulted in two separate fitting procedures required to obtain the energy spectrum of this isotope. Within \texttt{W2}, as per the first part of this series of papers (denoted throughout the paper with \textbf{I} \cite{poenaru2021parity}), a single fitting procedure was required to find the excitation energies of $^{163}$Lu, since only one proton was considered to align its angular momentum with that of the triaxial core. A successful description of the wobbling spectrum of $^{163}$Lu was made in \textbf{I}, together with calculation of other relevant quantities (e.g. rotational frequencies) that put \texttt{W2} to the test in terms of correctness. The obtained agreement with the experimental data was impressive.
-
-In this second part (hereafter denoted by \textbf{II}), attention is given to the properties of the classical energy function of $^{163}$Lu, and the geometrical interpretation of the total angular momentum. The classical expression of the energy function, which can be obtained via the Time-Dependent Variational Principle (TDVE) applied in \textbf{I} allows the study of the wobbling stability, and also provides an insight into the classical features of nucleonic motion within the angular momentum space. Its expression signifies the initial quantal Hamiltonian of the deformed system but is brought to a dequantized form with the help of a set of coordinates that describe the dynamics. By expressing the angular momentum vector $I$ of the triaxial nucleus and the energy function $E$ as surfaces in a three-dimensional space, it is possible to obtain the trajectories of the rotating system by intersecting the two shapes. This aspect will be analyzed in detail later on.
-
-The structure of this work is as follows. In Section 2 a brief overview of the key characteristics for the \textbf{W2} approach that emerged from \textbf{I} is made. In Section 3, the prerequisites for obtaining a classical expression of the energy function are formulated. Section 4 is devoted to the numerical results concerning the wobbling stability of $^{163}$Lu. Wobbling stability is studied in terms of contour plots of the aforementioned energy function. The nuclear trajectories (i.e., the intersection curves of the energy surface with angular momentum surface) of the system are graphically represented for given values of angular momentum and energy. Several regimes of rotational motion emerge from this analysis. Discussion of the results is also made in Section 4. The conclusions of this current work are given in Section 5.
-
 \begin{figure}
     \centering
     %\includegraphics[width=0.95\textwidth]{figs/wobbling_Regimes_COUPLING_SCHEME.pdf}
@@ -89,14 +82,19 @@ The structure of this work is as follows. In Section 2 a brief overview of the k
     \label{wobbling-coupling-scheme}
 \end{figure}
 
-\section{A new formalism for the description of wobbling states}
+The current work represents the second piece of a two-part series of papers that focuses on the description of the wobbling properties in odd-mass nuclei. Starting from an existing formalism concerning the interpretation of the wobbling structure of $^{163}$Lu \cite{raduta2020approach,raduta2020towards}, that initial framework (which will be further denoted by \texttt{W1}) is extended with a proper description of the states with positive and negative parity, by adopting the concept of \emph{Parity Partner Bands}. In the newly developed approach (denoted hereafter by \texttt{W2}), a single particle (the odd $i_{j=13/2}$ proton) couples to the triaxial core, generating a sequence of four triaxial strongly deformed bands (called $TSD_1$, $TSD_2$, $TSD_3$ and $TSD_4$), with a total of 63 rotational states in all the bands. Previously in \texttt{W1}, two different particle-core couplings were considered: one that consisted in the $i_{j=13/2}$ proton+core for the bands $TSD_{1,2,3}$ and one $h_{j=9/2}$ proton+core for $TSD_4$ band, which resulted in two separate fitting procedures required to obtain the energy spectrum of this isotope. Within \texttt{W2}, as per the first part of this series of papers (denoted throughout the paper with \textbf{I} \cite{poenaru2021parity}), a single fitting procedure was required to find the excitation energies of $^{163}$Lu, since only one proton was considered to align its angular momentum with that of the triaxial core. A successful description of the wobbling spectrum of $^{163}$Lu was made in \textbf{I}, together with calculation of other relevant quantities (e.g. rotational frequencies) that put \texttt{W2} to the test in terms of correctness. The obtained agreement with the experimental data was impressive.
 
-The \texttt{W2} formalism which emerged in \textbf{I} \cite{poenaru2021parity} consists in a re-interpretation of the four wobbling bands from $^{163}$Lu. Namely, the bands $TSD_2$ and $TSD_4$ are as which\emph{parity partner bands}: $\Delta I=2$ sequences with identical spins but opposite parity ($\pi_{2}=+1$ and $\pi_{4}=-1$). Arguments for this came from the analysis of the wave-function of the system. The function is an admixture of states with both positive and negative parity, since the initial Hamiltonian is symmetric to rotations by a specific amount ($D_2$ implies invariance to rotations by $\pi$). A complete description of the properties of the wave-function and the Hamiltonian concerning the parity property is made in \textbf{I}. In terms of wobbling excitations, both $TSD_2$ and $TSD_4$ are considered to be ground-state bands (zero-wobbling-phonon), obtained by coupling the $j_1=13/2$ proton (with parity $\pi_{j_1}=+1$) to a triaxial core of odd spins $R_2^+=1^+,3^+,5^+,\dots$ for $TSD_2$ and $R_2^-=1^-,3^-,5^-,\dots$ for $TSD_4$. The band $TSD_1$ is also regarded as as a ground state band, but here the proton couples to a core of even spin states $R_1=0^+,2^+,4^+,\dots$, and $TSD_3$ is indeed an excited wobbling band (one-wobbling-phonon) that is built on top of $TSD_2$ via the action of a phonon operator.
+In this second part (hereafter denoted by \textbf{II}), attention is given to the properties of the classical energy function of $^{163}$Lu, and the geometrical interpretation of the total angular momentum. The classical expression of the energy function, which can be obtained via the Time-Dependent Variational Principle (TDVE) applied in \textbf{I} allows the study of the wobbling stability, and also provides an insight into the classical features of nucleonic motion within the angular momentum space. Its expression signifies the initial quantal Hamiltonian of the deformed system but is brought to a dequantized form with the help of a set of coordinates that describe the dynamics. By expressing the angular momentum vector $I$ of the triaxial nucleus and the energy function $E$ as surfaces in a three-dimensional space, it is possible to obtain the trajectories of the rotating system by intersecting the two shapes. This aspect will be analyzed in detail later on.
 
-It is worth noting that this interpretation of the wobbling structure of $^{163}$Lu contrasts the previously known band configuration \cite{jensen2004coexisting,tanabe2006algebraic,frauendorf2014transverse} where the bands $TSD_2$ and $TSD_3$ were regarded as one- and two-wobbling phonon excitations built on the yrast $TSD_1$ band. However, it was recently shown \cite{raduta2020towards,raduta2020approach,raduta2020new} that $TSD_1$ and $TSD_2$ behave as signature partner bands, both being ground states with the favored (unfavored) $\alpha_f=+\frac{1}{2}$ ($\alpha_u=-\frac{1}{2}$) band as $TSD_1$ ($TSD_2$). This aspect, together with the fact that bands 2 and 4 are parity partners are the main ideas behind the \texttt{W2} formalism adopted in \textbf{I} and \textbf{II}.
+The structure of this work is as follows. In Section 2 a brief overview of the key characteristics for the \texttt{W2} approach that emerged from \textbf{I} is made. In Section 3, the prerequisites for obtaining a classical expression of the energy function are formulated. Section 4 is devoted to the numerical results concerning the wobbling stability of $^{163}$Lu. Wobbling stability is studied in terms of contour plots of the aforementioned energy function. The nuclear trajectories (i.e., the intersection curves of the energy surface with angular momentum surface) of the system are graphically represented for given values of angular momentum and energy. Several regimes of rotational motion emerge from this analysis. Discussion of the results is also made in Section 4. The conclusions of this current work are given in Section 5.
 
-\section{Theoretical Formalism}
-\label{section-theory}
+\section{New formalism for the description of wobbling states}
+
+The \texttt{W2} formalism which emerged in \textbf{I} \cite{poenaru2021parity} consists in a re-interpretation of the four wobbling bands from $^{163}$Lu. Namely, the bands $TSD_2$ and $TSD_4$ are \emph{parity partner bands}: $\Delta I=2$ sequences with identical spins but opposite parity ($\pi_{2}=+1$ and $\pi_{4}=-1$). Arguments for this came from the analysis of the wave function of the system. The function is an admixture of states with both positive and negative parity since the initial Hamiltonian is symmetric to rotations by a specific amount ($D_2$ implies invariance to rotations by $\pi$). A complete description of the properties of the wave function and the Hamiltonian concerning the parity property is made in \textbf{I}. In terms of wobbling excitations, both $TSD_2$ and $TSD_4$ are considered to be ground-state bands (zero-wobbling-phonon), obtained by coupling the $j_1=13/2$ proton (with parity $\pi_{j_1}=+1$) to a triaxial core of odd spins $R_2^+=1^+,3^+,5^+,\dots$ for $TSD_2$ and $R_2^-=1^-,3^-,5^-,\dots$ for $TSD_4$. The band $TSD_1$ is also regarded as as a ground state band, but here the proton couples to a core of even spin states $R_1=0^+,2^+,4^+,\dots$, and $TSD_3$ is indeed an excited wobbling band (one-wobbling-phonon) that is built on top of $TSD_2$ via the action of a phonon operator. The coupling schemes for \texttt{W2} are described in \textbf{I} (denoted by $C_1'$, $C_2'$, and $C_3'$). For a clearer picture, Appendix \ref{appendix:a} contains a diagram with all three mechanisms (see Fig. \ref{three-couplings}).
+
+It is worth noting that this interpretation of the wobbling structure of $^{163}$Lu contrasts the previously known band configuration \cite{jensen2004coexisting,tanabe2006algebraic,frauendorf2014transverse} where the bands $TSD_2$ and $TSD_3$ were regarded as one- and two-wobbling phonon excitations built on the yrast $TSD_1$ band. However, it was recently shown \cite{raduta2020towards,raduta2020approach,raduta2020new} that $TSD_1$ and $TSD_2$ behave as signature partner bands, both being ground states with the favored (unfavored) $\alpha_f=+\frac{1}{2}$ ($\alpha_u=-\frac{1}{2}$) band as $TSD_1$ ($TSD_2$). This aspect, together with the fact that bands 2 and 4 are parity partners are the main ideas behind the \texttt{W2} formalism adopted in \textbf{I} and \textbf{II}. The workflow involved in \texttt{W2} is drawn in Fig. \ref{w2-model-worfklow}, and for the sake of completeness, the initial \texttt{W1} approach is also sketched in Fig. \ref{w1-model-worfklow} from Appendix \ref{appendix:a}.
+
+\section{Theoretical Formalism}\label{section-theory}
 
 In this section, a description of the framework used for obtaining the wobbling spectrum of $^{163}$Lu is made. As stated in the previous section, the system is described with a similar Hamiltonian used in \texttt{W1}, namely the Hamiltonian for the triaxial PRM.
 \begin{align}
@@ -105,6 +103,53 @@ In this section, a description of the framework used for obtaining the wobbling 
 \end{align}
 
 The Hamiltonian from Eq. \ref{prm-hamiltonian} describes a system in which an odd $j$ particle interacts with a triaxial even-even core i.e., the odd nucleon is moving in a quadrupole deformed mean-field that is generated by the core. As such, the first term in the Hamiltonian $H_\text{core}$ describes the motion of a triaxial core, while the second term $H_\text{s.p.}$ represents the single-particle potential characterizing the valence proton.
+
+Indeed, the core Hamiltonian is given by:
+\begin{align}
+    H_\text{core}=\sum_{i=1,2,3}\frac{1}{2\mathcal{I}_i}(I_i-j_i)^2\ ,
+    \label{core-hamiltonian}
+\end{align}
+where the core angular momentum is $\vec{R}=\vec{I}-\vec{j}$ and the terms $\mathcal{I}_i$ represent the moments of inertia for a triaxial ellipsoid, along the principal axes. These three moments of inertia will be considered as free parameters in the present calculations, but, compared to the work \texttt{W1}, a unique set of MOIs will be attributed to the four bands, since the triaxial core will create an alignment with a unique particle, that is $j_1$. Because of this, there is no option for their nature (i.e., rigid or hydrodynamic).
+
+The single-particle Hamiltonian from Eq. \ref{prm-hamiltonian} is derived from the well-known Nilsson potential \cite{meyer1975collective,wang2008description}:
+\begin{align}
+    h(\beta_2,\gamma)=C\left\{\cos\gamma Y_{20}(\theta,\varphi)+\frac{\sin\gamma}{\sqrt{2}}\left[Y_{22}(\theta,\varphi)+Y_{2-2}(\theta,\varphi)\right]\right\}\ ,
+    \label{nilsson-potential}
+\end{align}
+where the coupling parameter $C$ causes the level splitting in the deformed field and it is proportional to the quadrupole deformation $\beta_2$. The potential $h$ from Eq. \ref{nilsson-potential} is written in terms of the quadrupole deformation and triaxiality parameter that play the role of deformation parameters within a triaxial system $(\beta_2,\gamma)$. Its expression using the coupling parameter $C$ is widely used when working with a particle-rotor-model \cite{peng2003description,koike2004chiral,wang2007doublet}. In the present this case, the change $h(\beta_2,\gamma)\to H_\text{s.p.}$ is done by applying the Wigner-Eckart theorem for the single-$j$ particle, and the following expression for $H_\text{s.p.}$ will be obtained:
+\begin{align}
+    H_\text{s.p.}=\frac{V}{j(j+1)}\left[\cos\gamma(3j_3^2-\vec{j}^2)-\sqrt{3}\sin\gamma(j_1^2-j_2^2)\right]+\epsilon_j\ .
+    \label{single-particle-hamiltonian}
+\end{align}
+
+This term describes the motion of an odd particle with angular momentum $j$ in a mean-field generated by a triaxial core, with a potential strength $V$ characterized by the quadrupole deformation ($V\propto\beta_2)$. In fact, the single-particle potential strength $V$ will be considered as the fourth free parameter within the calculations and its behavior will dictate the coupling of the $j$ particle with all four TSD bands. The term $\epsilon_j$ from Eq. \ref{single-particle-hamiltonian} represents the single-particle energy that corresponds to the odd $j$ proton from the $i$-orbital. One should not mix up the $j_1$ proton notation used throughout the paper with the components of the single-particle angular momentum from  Eq. \ref{single-particle-hamiltonian}.
+
+Regarding the triaxial deformation $\gamma$ which enters in Eq. \ref{single-particle-hamiltonian}, its value will be considered as another free parameter of the current problem. In other words, having $V$ and $\gamma$ as free parameters means that the system will be described by its deformation parameters which will be obtained through a fitting procedure, keeping an agreement with the experimental data regarding the excitation energies of the rotational states belonging to $TSD_{1,2,3,4}$.
+
+From Eqs. \ref{core-hamiltonian} and \ref{single-particle-hamiltonian}, the free parameter set can be obtained, hereafter denoted by $\mathcal{P}$. It comprises three moments of inertia, the single-particle potential strength, and the triaxial deformation. As such, $\mathcal{P}$ can be written as:
+\begin{align}
+    \mathcal{P}=\left[\mathcal{I}_1,\mathcal{I}_2,\mathcal{I}_3,V,\gamma\right]\ .
+    \label{parameter-set}
+\end{align}
+
+Solving the problem of \texttt{W2} is equivalent to finding the eigenvalues of $H$ given in Eq. \ref{prm-hamiltonian}. In a similar approach as in \texttt{W1}, the eigenvalues of interest are obtained on the base of a semi-classical approach. Thus, the first step is to perform a de-quantization procedure on $H$ through a TDVE \cite{raduta2007semiclassical,budaca2018tilted,raduta2017semiclassical}:
+\begin{align}
+    \delta\int_0^t\bra{\Psi_{IjM}}H-i\frac{\partial}{\partial t'}\ket{\Psi_{IjM}}dt'=0\ .
+    \label{tdve}
+\end{align}
+
+Working within a semi-classical approach allows one to keep close contact with the system's dynamics in terms of equations of motion for the generalized coordinates. The trial function from Eq. \ref{tdve} is carefully chosen as a product of two basis states comprising the states with total angular momentum $I$ and $j$, respectively:
+\begin{align}
+    \ket{\Psi_{IjM}}=\mathbf{N}e^{z\hat{I}_-}e^{s\hat{j}_-}\ket{IMI}\ket{jj}\ ,
+    \label{trial-function}
+\end{align}
+where the operators $\hat{I}_-$ and $\hat{j}_-$ denote the lowering operators for the intrinsic angular momenta $\vec{I}$ and $\vec{j}$, respectively, and $\mathbf{N}$ plays the role of the normalization constant. One must remark the fact that the states $\ket{IMI}$ and $\ket{jj}$ from Eq. \ref{trial-function} are extremal states for the operators $(\hat{I}^2,\hat{I}_3)$ and $(\hat{j^2},\hat{j_3})$, respectively, and they correspond to the maximally allowed states for a given set of angular momenta $I$ and $j$. As an observation, the trial function is an admixture of components of definite $K$, which is consistent with the fact that for a triaxial nucleus, $K$ is not a good quantum number.
+
+The variables $z$ and $s$ from Eq. \ref{trial-function} are complex functions of time, and they play the role of classical coordinates in the phase spaces that describe the motion of the core and the odd particle:
+\begin{align}
+    z=\rho e^{i\varphi}\ ,\ s=fe^{i\psi}\ .
+    \label{complex-variable-set}
+\end{align}
 
 In order to obtain a set of classical equations in a Hamilton Canonical form, a new pair of variables are introduced: 
 \begin{align}
@@ -117,7 +162,7 @@ where $r\in\left[0,2I\right]$ and $t\in\left[0,2j\right]$.Thus the equations of 
     \label{eq-motion}
 \end{align}
 
-The function $\mathcal{H}$ denotes the average of the Hamiltonian operator $H$ (Eq. \ref{prm-hamiltonian}) with the trial function $\ket{\Psi_{IjM}}$, and it plays the role of classical energy:
+The function $\mathcal{H}$ denotes the average of the Hamiltonian operator $H$ (Eq. \ref{prm-hamiltonian}) with the trial function $\ket{\Psi_{IjM}}$ given in Eq. \ref{trial-function}, and it plays the role of classical energy:
 \begin{align}
     \mathcal{H}(\varphi,r;\psi,t)=\bra{\Psi_{IjM}}H\ket{\Psi_{IjM}}\ ,
 \end{align}
@@ -373,29 +418,30 @@ Concluding the present work, this newly developed formalism proves to be a succe
 This work was supported by UEFISCU, through the project \textbf{PCE-16/2021}.
 \end{acknowledgement}
 
-% \appendix
-% \section{Appendix - Workflow Diagrams}
-% \label{appendix:a}
-% The two models described throughout the paper, namely the formalisms $\texttt{W1}$ and \texttt{W2} are schematically represented. The \texttt{W1} model corresponds to the work given in Refs. \cite{raduta2020approach,raduta2020towards}, and the \texttt{W2} corresponds to the formalism developed in this two-part series of papers. For \texttt{W1}, the diagram is shown in Figure \ref{w1-model-worfklow}, while for the newly developed approach \texttt{W2}, the diagram is shown in Figure \ref{w2-model-worfklow}. The coupling scheme for \texttt{W2} is also represented in Figure \ref{three-couplings}.
+\appendix
+\section{Appendix - Workflow Diagrams}
+\label{appendix:a}
+The two models described throughout the paper, namely the formalisms $\texttt{W1}$ and \texttt{W2} are schematically represented. The \texttt{W1} model corresponds to the work given in Refs. \cite{raduta2020approach,raduta2020towards}, and the \texttt{W2} corresponds to the formalism developed in this two-part series of papers. For \texttt{W1}, the diagram is shown in Figure \ref{w1-model-worfklow}, while for the newly developed approach \texttt{W2}, the diagram is shown in Figure \ref{w2-model-worfklow}. The coupling scheme for \texttt{W2} is also represented in Figure \ref{three-couplings}.
 
-% \begin{figure}
-%     \centering
-%     \includegraphics[width=0.95\textwidth]{figs/W1_Approach.pdf}
-%     \caption{Schematic representation of the band structure adopted for $^{163}$Lu in the \texttt{W1} model. For each band, the wobbling phonon numbers are shown. The main features and linking properties between bands are represented with arrows. The bottom part shows the coupling scheme (the core and the valence nucleon) for each wobbling band. The blue arrow marks the activation of $TSD_3$ states via the phonon operator.}
-%     \label{w1-model-worfklow}
-% \end{figure}
-% \begin{figure}
-%   \centering
-%     \includegraphics[width=0.95\textwidth]{figs/W2_Approach.pdf}
-%     \caption{Schematic representation of the band structure adopted for $^{163}$Lu in the \texttt{W2} model. For each band, the wobbling phonon numbers are shown. The main features and linking properties between bands are represented with arrows. The bottom part shows the coupling scheme (the core and the valence nucleon) for each wobbling band. The blue arrow marks the activation of $TSD_3$ states via the phonon operator.}
-%     \label{w2-model-worfklow}
-% \end{figure}
-% \begin{figure}
-%     \centering
-%     \includegraphics[width=0.95\textwidth]{figs/coupling_schemes_C1C2C3.pdf}
-%     \caption{A schematic representation with the three coupling schemes that characterize the \texttt{W2} model. The same odd particle ($j_1=i_{13/2}$ proton) is coupled with two positive cores with even (odd) integer spin sequences for $TSD_1$ ($TSD_2$), and one negative core in the case of $TSD_4$ with odd integer spin sequence. The total spin of the system precesses around the axis with the largest MOI, as it is the case for a triaxial rotor.}
-%     \label{three-couplings}
-% \end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{figs/W1_Approach.pdf}
+    \caption{Schematic representation of the band structure adopted for $^{163}$Lu in the \texttt{W1} model. For each band, the wobbling phonon numbers are shown. The main features and linking properties between bands are represented with arrows. The bottom part shows the coupling scheme (the core and the valence nucleon) for each wobbling band. The blue arrow marks the activation of $TSD_3$ states via the phonon operator.}
+    \label{w1-model-worfklow}
+\end{figure}
+\begin{figure}
+  \centering
+    \includegraphics[width=0.95\textwidth]{figs/W2_Approach.pdf}
+    \caption{Schematic representation of the band structure adopted for $^{163}$Lu in the \texttt{W2} model. For each band, the wobbling phonon numbers are shown. The main features and linking properties between bands are represented with arrows. The bottom part shows the coupling scheme (the core and the valence nucleon) for each wobbling band. The blue arrow marks the activation of $TSD_3$ states via the phonon operator.}
+    \label{w2-model-worfklow}
+\end{figure}
+\begin{figure}
+    \centering
+    % \includegraphics[width=0.95\textwidth]{figs/coupling_schemes_C1C2C3.pdf}
+    \includegraphics[scale=0.55]{figs/coupling_schemes_C1C2C3.pdf}
+    \caption{A schematic representation with the three coupling schemes that characterize the \texttt{W2} model. The same odd particle ($j_1=i_{13/2}$ proton) is coupled with two positive cores with even (odd) integer spin sequences for $TSD_1$ ($TSD_2$), and one negative core in the case of $TSD_4$ with odd integer spin sequence. The total spin of the system precesses around the axis with the largest MOI, as it is the case for a triaxial rotor.}
+    \label{three-couplings}
+\end{figure}
 
 \begin{thebibliography}{99}
 
@@ -574,8 +620,7 @@ YX~Luo, JH~Hamilton, AV~Ramaya, JK~Hwang, SH~Liu, JO~Rasmussen, S~Frauendorf,
 \newblock Triaxial and triaxial softness in neutron rich ru and pd nuclei.
 \newblock In {\em Exotic Nuclei: EXON-2012}, pages 215--224. World Scientific,
   2013.
-
-
+  
 \bibitem{petrache2019diversity}
 CM~Petrache, PM~Walker, S~Guo, QB~Chen, S~Frauendorf, YX~Liu, RA~Wyss,
   D~Mengoni, YH~Qiang, A~Astier, et~al.
