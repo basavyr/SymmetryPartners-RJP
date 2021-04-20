@@ -140,14 +140,15 @@ The explicit form of the above equations of motion are given in Appendix A of \c
     \mathcal{H}(\varphi,r;\psi,t)=\bra{\Psi_{IjM}}H\ket{\Psi_{IjM}}\ ,
 \end{align}
 
-$\mathcal{H}$ is a constant of motion, meaning that $\dot{\mathcal{H}}\equiv0$. This equation will define a surface, a so-called \emph{equi-energy surface} $\mathcal{H}=\text{const}$. It is worth mentioning the fact that such an equality holds because the entire set of equations of motion emerged from a variational principle. The sign of the Hessian associated to this classical function will indicate its stationary points. Among them some are minima, and the critical points which are of interest for the present study are minimal, and obtained when the following ordering for the three moments of inertia holds: $\mathcal{I}_1>\mathcal{I}_2>\mathcal{I}_3$. There are no restrictions for the triaxiality parameter $\gamma$ and the single-particle potential strength $V$ (which can implictely be considered as a measure of the quadrupole deformation parameter $\beta_2$). As such, the set of coordinates $s\equiv(\varphi,r;\psi,t)$ will provide a minimum value for $\mathcal{H}$ only for certain values that will be discussed in the following part. Regarding the physical meaning of $s$, one can see that the angles $\varphi$ and $\psi$ play the role of generalized coordinates, while $r$ and $t$ represent the conjugate momenta.
+$\mathcal{H}$ is a constant of motion, meaning that $\dot{\mathcal{H}}\equiv0$. This equation will define a surface, a so-called \emph{equi-energy surface} $\mathcal{H}=\text{const}$. It is worth mentioning the fact that such an equality holds because the entire set of equations of motion emerged from a variational principle. The sign of the Hessian associated to this classical function will indicate its stationary points. Among them some are minima, and the critical points which are of interest for the present study are minimal, and obtained when the following ordering for the three moments of inertia holds: $\mathcal{I}_1>\mathcal{I}_2>\mathcal{I}_3$. There are no restrictions for the triaxiality parameter $\gamma$ and the single-particle potential strength $V$ (which can implicitly be considered as a measure of the quadrupole deformation parameter $\beta_2$). As such, the set of coordinates $(\varphi,r;\psi,t)$ will provide a minimum value for $\mathcal{H}$ only for certain values that will be discussed in the following part. Regarding the physical meaning of $(\varphi,r;\psi,t)$, one can see that the angles $\varphi$ and $\psi$ play the role of generalized coordinates, while $r$ and $t$ represent the conjugate momenta.
 
 \subsection{Energy function - geometrical interpretation}
 
 The analytical expression for the average of $H$ with the trial function describing the system was previously calculated in \texttt{W1}. Indeed, the energy function $\mathcal{H}$ was given in terms of the phase space coordinates $(r,\varphi;t,\psi)$ as follows \cite{raduta2020approach}:
 \begin{align}
-    \mathcal{H}=&\frac{I}{2}(A_1+A_2)+A_3I^2+\frac{2I-1}{2I}r(2I-r)\mathcal{A}_\varphi+\frac{j}{2}(A_1+A_2)+A_3j^2+\frac{2j-1}{2j}t(2j-t)\mathcal{A}_\psi \nonumber\\
-    &-2\sqrt{r(2I-r)t(2j-t)}\mathcal{A}_{\varphi\psi}+A_3\left[r(2j-t)+t(2I-r)\right]-2A_3Ij+V\frac{2j-1}{j+1}\mathcal{A}_\gamma\ ,
+    \mathcal{H}=&\frac{I}{2}(A_1+A_2)+A_3I^2+\frac{2I-1}{2I}r(2I-r)\mathcal{A}_\varphi+\frac{j}{2}(A_1+A_2)+A_3j^2+ \nonumber\\
+    &+\frac{2j-1}{2j}t(2j-t)\mathcal{A}_\psi-2\sqrt{r(2I-r)t(2j-t)}\mathcal{A}_{\varphi\psi}+\nonumber\\
+    &+A_3\left[r(2j-t)+t(2I-r)\right]-2A_3Ij+V\frac{2j-1}{j+1}\mathcal{A}_\gamma
     \label{energy-function-analytical}
 \end{align}
 with:
@@ -156,9 +157,16 @@ with:
     &\mathcal{A}_{\varphi\psi}(\varphi,\psi)=(A_1\cos\varphi\cos\psi+A_2\sin\varphi\sin\psi)\ ,\nonumber\\
     &\mathcal{A}_\psi(\psi)=(A_1\cos^2\psi+A_2\sin^2\psi-A_3)\ , \nonumber\\
     &\mathcal{A}_\gamma(t,\psi)=\left[\cos\gamma-\frac{t(2j-t)}{2j^2}\sqrt{3}(\sqrt{3}\cos\gamma+\sin\gamma\cos2\psi)\right]\ .
+    \label{special-terms-energy-function}
 \end{align}
 
-It is instructive to check the dependence of the energy function on the angular momentum components, e.g., the coordinates $x_k\overset{\mathrm{not.}}{=}I_k\ ,\ k=1,2,3$, where the quantization axis is chosen as the 3-axis. By expressing the angular momentum coordinates $x_{1,2,3}$ in terms of the polar angles $(\theta,\varphi)$ and a radius $I$ , one obtains: 
+For the condition $A_1>A_2>A_3$, the expression from Eq. \ref{energy-function-analytical} is minimal in the point $p_0|_\text{min}=(0,I;0,j)$, since $p_0$ is a critical point of $\mathcal{H}$. The same critical point was used within \textbf{I} in order to obtain the expression of $\mathcal{H}_\text{min}^{(I,j)}$ which entered in the expressions of the excitation energies for $^{163}$Lu (See Eqs. 7-9 from \textbf{I}). Therein, it was possible to parametrize the total energy of the system in terms of the three MOIs, the triaxiality parameter $\gamma$, and the single-particle potential strength $V$, having them as free parameters (denoted as $\mathcal{P}$ in \textbf{I}). In fact, looking back at Eqs. \ref{energy-function-analytical} and \ref{special-terms-energy-function} written above, the same parameters are present here. Since the inertial parameters $A_k$ are $A_k=\frac{1}{2\mathcal{I}_k}\ ,\ k=1,2,3$, it follows that:
+\begin{align}
+    \mathcal{H}=\texttt{fct}(\mathcal{I}_1,\mathcal{I}_3,\mathcal{I}_3,\gamma,V)\ .
+\end{align}
+This will help for the numerical application of the current research, since one can just adopt the numerical values for $\mathcal{P}\equiv\left[\mathcal{I}_{1,2,3},\gamma,V\right]$ obtained via the fitting procedure made for the excitation energies in \textbf{I}. One can see that indeed, the classical energy function plays a crucial role in both determining the wobbling energies of the isotope, but also (as it will be shown) for studying its behavior concerning the geometry of the system. 
+
+Furthermore, it is instructive to check the dependence of the energy function on the angular momentum components, e.g., the coordinates $x_k\overset{\mathrm{not.}}{=}I_k\ ,\ k=1,2,3$, where the quantization axis is chosen as the 3-axis. By expressing the angular momentum coordinates $x_{1,2,3}$ in terms of the polar angles $(\theta,\varphi)$ and a radius $I$, one obtains: 
 \begin{align}
     x_1=I\sin\theta\cos\varphi\ ,\ x_2=I\sin\theta\sin\varphi\ ,\ x_3=I\cos\theta\ .
     \label{coordinate-parametrization}
@@ -208,7 +216,7 @@ The trajectories obtained through the intersection of Eqs. \ref{energy-ellipsoid
 
 Numerical results.
 
-\begin{table}
+\begin{table}[ht]
 \caption{The parameter set $\mathcal{P}$ that was determined by a fitting procedure of the excitation energies for $^{163}$Lu, provided via calculations from \textbf{I}.}
     \centering
   \begin{tabular}{lllll}
