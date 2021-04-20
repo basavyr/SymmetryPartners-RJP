@@ -22,6 +22,7 @@ def A_k(moi_k):
     return 1.0 / (2.0 * moi_k)
 
 
+# the single-particle term
 def T_SingleParticle(params, gm, j):
     A1 = params["A1"]
     A2 = params["A2"]
