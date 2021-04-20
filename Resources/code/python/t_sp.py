@@ -4,7 +4,7 @@ import numpy as np
 from matplotlib import rc
 import matplotlib.pyplot as plt
 
-plot_file = 'T_SingleParticle.pdf'
+plot_file = '../../../sub-paper2/figs/T_SingleParticle.pdf'
 
 
 # transfrom the angle from degrees into radians
@@ -59,7 +59,7 @@ plt.rcParams['figure.dpi'] = 300
 
 # rc('font',**{'family':'serif','serif':['Times']})
 rc('text', usetex=True)
-
+plt.figure(figsize=(5, 4))
 plt.plot(gammas, sp_terms_j1, '-b', label=r'$j_1=\frac{13}{2}$')
 plt.plot(gammas, sp_terms_j2, '--k', label=r'$j_2=\frac{11}{2}$')
 plt.plot(gammas, sp_terms_j3, '-r', label=r'$j_3=\frac{9}{2}$')

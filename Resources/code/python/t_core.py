@@ -4,7 +4,7 @@ import numpy as np
 from matplotlib import rc
 import matplotlib.pyplot as plt
 
-plot_file = 'T_Core.pdf'
+plot_file = '../../../sub-paper2/figs/T_Core.pdf'
 
 
 # transfrom the angle from degrees into radians
@@ -67,6 +67,8 @@ spins = np.arange(0.0, 25.0, 2.0)
 core_terms_1 = [T_Core(PARAMS_FIT, I) for I in spins]
 core_terms_2 = [T_Core(PARAMS_2, I) for I in spins]
 core_terms_3 = [T_Core(PARAMS_3, I) for I in spins]
+
+plt.figure(figsize=(5,4))
 
 plt.plot(spins, core_terms_1, '-b', label=r'$A_1>A_2>A_3$')
 plt.plot(spins, core_terms_2, '-m', label=r'$A_2>A_3>A_1$')
