@@ -45,19 +45,23 @@ PARAMS = {
 }
 
 
-j = 13.0 / 2.0
-gammas = np.arange(-30, 61, 5)
-sp_terms = [T_SingleParticle(PARAMS, x, j) for x in gammas]
+j1 = 13.0 / 2.0
+j2 = 11.0 / 2.0
+j3 = 9.0 / 2.0
+gammas = np.arange(-60, 61, 5)
+sp_terms_j1 = [T_SingleParticle(PARAMS, x, j1) for x in gammas]
+sp_terms_j2 = [T_SingleParticle(PARAMS, x, j2) for x in gammas]
+sp_terms_j3 = [T_SingleParticle(PARAMS, x, j3) for x in gammas]
 
 plt.rcParams.update({'font.size': 15})
 plt.rcParams['figure.dpi'] = 300
 
-print(plt.rcParams['figure.dpi'])
-
 # rc('font',**{'family':'serif','serif':['Times']})
 rc('text', usetex=True)
 
-plt.plot(gammas, sp_terms, '-b', label=r'$T_{s.p.}$')
+plt.plot(gammas, sp_terms_j1, '-b', label=r'$j_1=\frac{13}{2}$')
+plt.plot(gammas, sp_terms_j2, '--k', label=r'$j_2=\frac{11}{2}$')
+plt.plot(gammas, sp_terms_j3, '-r', label=r'$j_3=\frac{9}{2}$')
 plt.xlabel(r'$\gamma$ [$\hbar$]')
 plt.ylabel(r'$T_{s.p.}$ [MeV]')
 plt.legend(loc='best')
