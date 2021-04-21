@@ -229,14 +229,16 @@ The trajectories obtained through the intersection of Eqs. \ref{energy-surface-s
 \section{Numerical results}
 \label{section-results}
 
-As already mentioned in the previous section, for the numerical part of this research, the parameters obtained from the fitting procedure made in \textbf{I} will be adopted for consistency of the \texttt{W2} approach, their values being listed in Table \ref{parameter_set}. It is worth noting that for the case of \texttt{W1}, the geometrical interpretation of the classical energy function would have required two such sets of parameters, and therefore, two sets of calculations (one for the bands $TSD_{1,2,3}$ and one for $TSD_4$).
+As already mentioned in the previous section, for the numerical part of this research, the parameters obtained from the fitting procedure made in \textbf{I} will be adopted for consistency of the \texttt{W2} approach, their values being listed in Table \ref{parameter_set}. It is worth noting that for the case of \texttt{W1}, the geometrical interpretation of the classical energy function would have required two such sets of parameters, and therefore, two sets of calculations (one for the bands $TSD_{1,2,3}$ and one for $TSD_4$). 
+
+Here, by using the parameters from Table \ref{parameter_set}, numerical calculations of $\mathcal{H}$ expressed in the polar coordinates via Eq. \ref{energy-function-minimal} are performed, with graphical visualization of its behavior. Furthermore, the surfaces $E$ and $I^2$ described in Eqs. \ref{energy-ellipsoid-cartesian}-\ref{angular-momentum-sphere} will be represented for different values of the energy and the total spin.
 
 \begin{table}[ht]
 \caption{The parameter set $\mathcal{P}$ that was determined by a fitting procedure of the excitation energies for $^{163}$Lu, provided via calculations from \textbf{I}.}
     \centering
   \begin{tabular}{lllll}
   \hline
-$\mathcal{I}_1$ [$\hbar^2$/\text{MeV}] & $\mathcal{I}_2$ [$\hbar^2$/\text{MeV}]& $\mathcal{I}_3$ [$\hbar^2$/\text{MeV}] & $\gamma$ [deg. ] & $V$ [\text{MeV}] \\
+$\mathcal{I}_1$ $\left[\hbar^2/\text{MeV}\right]$ & $\mathcal{I}_2$ $\left[\hbar^2/\text{MeV}\right]$ & $\mathcal{I}_3$ $\left[\hbar^2/\text{MeV}\right]$ & $\gamma$ [deg. ] & $V$ [\text{MeV}] \\
 \hline
 \hline
 72              & 15              & 7               & 22       & 2.1\\
@@ -247,19 +249,35 @@ $\mathcal{I}_1$ [$\hbar^2$/\text{MeV}] & $\mathcal{I}_2$ [$\hbar^2$/\text{MeV}]&
 
 \subsection{Stability of the wobbling region}\label{wobbling-stability}
 
-The expression for the classical energy function, which plays a crucial role in analyzing the nucleus's stability for a given rotational state, was presented in the previous section, through Eq. \ref{energy-function-minimal}. This will be used within the present numerical calculations to pinpoint the regions in space where the minimal points of $\mathcal{H}(\theta,\varphi)$ do exist. A special interest is devoted to the low-lying states from each of the four bands. Namely, for each band, a spin-state close to the band-head is chosen, then using the parameter set $\mathcal{P}$, a graphical representation in the $(\theta,\varphi)$-coordinate space is realized, and in each case, the extremal points with minimum character are identified. These graphical representations are shown in Figures \ref{contours-12} and \ref{contours-34}.
+The expression for the classical energy function, which plays a crucial role in analyzing the nucleus's stability for a given rotational state, was presented in the previous section, through Eq. \ref{energy-function-minimal}. This will be used within the present numerical calculations to pinpoint the regions in space where the minimal points of $\mathcal{H}$ do exist. A special interest is devoted to the low-lying states from each of the four bands. Namely, for each band, a spin-state close to the band-head is chosen, then using the parameter set $\mathcal{P}$, a graphical representation in the $(\theta,\varphi)$-coordinate space is realized, and in each case, the extremal points with minimum character are identified. These graphical representations are shown in Figures \ref{contours-12} and \ref{contours-34}. For the sake of completeness, the critical points of $\mathcal{H}$ which are minimal are listed separately in Table \ref{critical_points_h}.
 
-\begin{figure}
+\begin{table}[ht]
+\caption{The minimum points of $\mathcal{H}$, numerically evaluated for the parameter set $\mathcal{P}$. The points are represented as the \emph{red dots} on the contour plots from Figs. \ref{contours-12}-\ref{contours-34}.}
+    \centering
+\begin{tabular}{cccc}
+\hline
+Minimal point & $\theta$ [rad] & $\varphi$ [rad] & $A_k$ ordering \\
+\hline
+\hline
+$p_0$         & $\pi/2$       &    $0$       &      $A_3>A_2>A_1$          \\
+$p_1$         & $\pi/2$      &   $\pi$    &      $A_3>A_2>A_1$          \\
+$p_2$         & $\pi/2$     &   $2\pi$        &      $A_3>A_2>A_1$ \\
+\hline
+\end{tabular}
+    \label{critical_points_h}
+\end{table}
+
+\begin{figure}[ht]
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[scale=0.35]{figs/contour-tsd1.pdf}
+  \includegraphics[scale=0.3]{figs/contour-tsd1.pdf}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
- \includegraphics[scale=0.35]{figs/contour-tsd2.pdf}
+ \includegraphics[scale=0.3]{figs/contour-tsd2.pdf}
 \end{minipage}
-\caption{Contour plots with the energy function $\mathcal{H}$ given by Eq. \ref{energy-function-minimal} for a state in $TSD_1$ (left) and a state from $TSD_2$ (right). Calculations were performed with the numerical parameters given in Table \ref{parameter_set}. The minimum points for $\mathcal{H}$ are marked by red dots, and they represent the regions in space where the nucleus has a stable wobbling character. The darker \emph{islands} also indicate a stable motion of the triaxial nucleus.}
+\caption{The classical energy function $\mathcal{H}$ given by Eq. \ref{energy-function-minimal} for a state in $TSD_1$ (left) and a state from $TSD_2$ (right). Calculations were performed with the numerical parameters given in Table \ref{parameter_set}. The minimum points for $\mathcal{H}$ are marked by red dots (see also Table \ref{critical_points_h}), and they represent the regions in space where the nucleus the most stable wobbling character (i.e., the precessional motion of the total a.m. is relatively small). The \emph{closed} contours represent trajectories surrounding the minimum points, where wobbling motion can occur, while the contours surrounding all three minima represent unstable motion of the nucleus, where wobbling regime is forbidden.}
     \label{contours-12}
 \end{figure}
 
@@ -269,13 +287,13 @@ The four contour plots shown in Figures \ref{contours-12} and \ref{contours-34} 
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[scale=0.35]{figs/contour-tsd3.pdf}
+  \includegraphics[scale=0.3]{figs/contour-tsd3.pdf}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
- \includegraphics[scale=0.35]{figs/contour-tsd4.pdf}
+ \includegraphics[scale=0.3]{figs/contour-tsd4.pdf}
 \end{minipage}
-\caption{Contour plots with the energy function $\mathcal{H}$ given by Eq. \ref{energy-function-minimal} for a state in $TSD_3$ (left) and a state from $TSD_4$ (right). Calculations were performed with the numerical parameters given in Table \ref{parameter_set}. The minimum points for $\mathcal{H}$ are marked by red dots, and they represent the regions in space where the nucleus has a stable wobbling character. The darker \emph{islands} also indicate a stable motion of the triaxial nucleus.}
+\caption{The classical energy function $\mathcal{H}$ given by Eq. \ref{energy-function-minimal} for a state in $TSD_3$ (left) and a state from $TSD_4$ (right). Calculations were performed with the numerical parameters given in Table \ref{parameter_set}. The minimum points for $\mathcal{H}$ are marked by red dots (see also Table \ref{critical_points_h}), and they represent the regions in space where the nucleus the most stable wobbling character (i.e., the precessional motion of the total a.m. is relatively small). The \emph{closed} contours represent trajectories surrounding the minimum points, where wobbling motion can occur, while the contours surrounding all three minima represent unstable motion of the nucleus, where wobbling regime is forbidden.}
     \label{contours-34}
 \end{figure}
 
