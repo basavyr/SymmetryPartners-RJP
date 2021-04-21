@@ -54,12 +54,12 @@ sp_terms_j1 = [T_SingleParticle(PARAMS, x, j1) for x in gammas]
 sp_terms_j2 = [T_SingleParticle(PARAMS, x, j2) for x in gammas]
 sp_terms_j3 = [T_SingleParticle(PARAMS, x, j3) for x in gammas]
 
-plt.rcParams.update({'font.size': 15})
+plt.rcParams.update({'font.size': 13})
 plt.rcParams['figure.dpi'] = 300
 
 # rc('font',**{'family':'serif','serif':['Times']})
 rc('text', usetex=True)
-plt.figure(figsize=(5, 4))
+plt.figure(figsize=(3.5, 2.5))
 plt.plot(gammas, sp_terms_j1, '-b', label=r'$j_1=\frac{13}{2}$')
 plt.plot(gammas, sp_terms_j2, '--k', label=r'$j_2=\frac{11}{2}$')
 plt.plot(gammas, sp_terms_j3, '-r', label=r'$j_3=\frac{9}{2}$')

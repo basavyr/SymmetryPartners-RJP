@@ -60,7 +60,7 @@ PARAMS_3 = {
 }
 
 
-plt.rcParams.update({'font.size': 15})
+plt.rcParams.update({'font.size': 13})
 plt.rcParams['figure.dpi'] = 300
 
 # rc('font',**{'family':'serif','serif':['Times']})
@@ -71,7 +71,7 @@ core_terms_1 = [T_Core(PARAMS_FIT, I) for I in spins]
 core_terms_2 = [T_Core(PARAMS_2, I) for I in spins]
 core_terms_3 = [T_Core(PARAMS_3, I) for I in spins]
 
-plt.figure(figsize=(5, 4))
+plt.figure(figsize=(3.5, 2.5))
 
 plt.plot(spins, core_terms_1, '-b', label=r'$A_1>A_2>A_3$')
 plt.plot(spins, core_terms_2, '-m', label=r'$A_2>A_3>A_1$')
